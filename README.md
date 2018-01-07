@@ -71,10 +71,11 @@ Aún no tiene planes de dejar el rol, pues lo viene posponiendo año tras año. 
 - Sus padres sospechan, poruque pasa mucho tiempo en redes sociales.
 - Tener que crear cuentas de respaldo por los cierres de sus cuentas.
 
-#### Objetivos de Sofía en nuestra plataforma
+### Objetivos de Sofía en nuestra plataforma
 
 - Desea dejar de preocuparse por el cierre de sus cuentas.
 - Desea poder manejar diferentes perfiles desde una misma cuenta.
+- Desea una comunidad explusiva para rolplayers
 - Desea ingresar tanto en desktop como en mobile sin perder relación
 
 
