@@ -17,14 +17,18 @@
       </div>
     </div>  
     <div class="row">
-      <div class="col s8 col m8 col l8">
-        <h4>Empieza a crear tu mundo</h4>
-        <h6>A continuación, llena los datos personales de tu personaje</h6>
+      <div class="col s10 offset-s1 col m8 col l8">
+        <h4 class="center-align">Empieza a crear tu mundo</h4>
       </div>
     </div>
     <div class="row">
+        <div class="col s12 col m8 col l8">
+          <h6 class="center-align">A continuación, llena los datos personales de tu personaje</h6>
+        </div>
+      </div>
+    <div class="row">
     <div class="col s12 m4 l4"> 
-        <figure>
+        <figure class="col s8 offset-s2">
             <img src="" alt="perfil">
         </figure>
 
@@ -40,37 +44,67 @@
           <div class="row">
           <form class="col s12 col l12">
             <div class="row">
-              <div class="input-field col s6">
+              <div class="input-field col s8 offset-s2">
                 <i class="material-icons prefix">account_circle</i>
                 <input id="icon_prefix" type="text" class="validate">
                 <label for="icon_prefix">Nombre de tu personaje</label>
               </div>
             </div>
             <div class="row">
-                    <div class="input-field col s6">
+                    <div class="input-field col s8 offset-s2">
                       <i class="material-icons prefix">filter_3</i>
                       <input id="icon_prefix" type="number" class="validate">
                       <label for="icon_prefix">Edad</label>
                     </div>
             </div>
             <div class="row">
-                    <div class="col s6">
+                    <div class="input-field col s8 offset-s2">
                       <i class="material-icons prefix">event</i>
                       <label for="icon_prefix"></label>
                       <input type="date" name="fecha" min="1985-01-01" max="2030-12-31" class="validate" >
                     </div>
             </div>
             <div class="row">
-            <div class="input-field col s6">
-              <select>
-                <option value="" disabled selected>Choose your option</option>
-                <option value="1">Option 1</option>
-                <option value="2">Option 2</option>
-                <option value="3">Option 3</option>
+            <div class="input-field col s8 offset-s2">
+                <i class="material-icons prefix">edit_location</i>
+              <select>                  
+                <option value="" disabled selected> País de residencia</option>
+                <option value="1">Perú</option>
+                <option value="2">Korea del Sur</option>
+                <option value="3">Inglaterra</option>
+                <option value="4">Rusia</option>
+                <option value="5">Japón</option>
               </select>
-              <label>País de residencia</label>
+              <label></label>
             </div>
           </div>
+          <div class="row">
+              <div class="input-field col s8 offset-s2">
+                  <i class="material-icons prefix">favorite</i>
+                <select>                  
+                  <option value="" disabled selected>Estado civil</option>
+                  <option value="1">Soltero</option>
+                  <option value="2">En una relación</option>
+                  <option value="3">Casado</option>
+                  <option value="4">Separado</option>
+                </select>
+                <label></label>
+              </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s8 offset-s2">
+                    <i class="material-icons prefix">fingerprint</i>
+                  <select>                  
+                    <option value="" disabled selected>Temática</option>
+                    <option value="1">Ninguno</option>
+                    <option value="2">Ciudad</option>
+                    <option value="3">Fantasía</option>
+                    <option value="4">Paranormal</option>
+                    <option value="5">Estudiante</option>
+                  </select>
+                  <label></label>
+                </div>
+              </div>
             </form> 
           </div> 
 
