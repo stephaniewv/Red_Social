@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../vendors/materialize/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../css/create-profile.css">
+    <title>Crear perfil</title>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col s12 col m12 col l12">
+
+      </div>
+    </div>  
+    <div class="row">
+      <div class="col s8 col m8 col l8">
+        <h4>Empieza a crear tu mundo</h4>
+        <h6>A continuación, llena los datos personales de tu personaje</h6>
+      </div>
+    </div>
+    <div class="row">
+    <div class="col s12 m4 l4"> 
+        <figure>
+            <img src="" alt="perfil">
+        </figure>
+
+      </div>
+      <div class="col s12 m8 l8"> <!-- Note that "m8 l9" was added -->
+        <!-- Teal page content
+
+              This content will be:
+          9-columns-wide on large screens,
+          8-columns-wide on medium screens,
+          12-columns-wide on small screens  -->
+
+          <div class="row">
+          <form class="col s12 col l12">
+            <div class="row">
+              <div class="input-field col s6">
+                <i class="material-icons prefix">account_circle</i>
+                <input id="icon_prefix" type="text" class="validate">
+                <label for="icon_prefix">Nombre de tu personaje</label>
+              </div>
+            </div>
+            <div class="row">
+                    <div class="input-field col s6">
+                      <i class="material-icons prefix">filter_3</i>
+                      <input id="icon_prefix" type="number" class="validate">
+                      <label for="icon_prefix">Edad</label>
+                    </div>
+            </div>
+            <div class="row">
+                    <div class="col s6">
+                      <i class="material-icons prefix">event</i>
+                      <label for="icon_prefix"></label>
+                      <input type="date" name="fecha" min="1985-01-01" max="2030-12-31" class="validate" >
+                      
+                    </div>
+            </div>
+            </form> 
+          </div> 
+
+      </div>
+    </div>
+
+  </div>
+  
+  <script src="../vendors/js/jquery-3.2.1.min.js"></script>
+  <script src="../vendors/materialize/js/materialize.min.js"></script> 
+  <script src="../js/create-profile.js"></script>  
+</body>
+</html>

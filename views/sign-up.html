@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../vendors/materialize/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="../css/sign-up.css">
+  <title>Sign up</title>
+</head>
+<body>
+  <div class="container container-sign-up">
+    <div class="row">
+      <div class="col s12 col m12 col l12 title">      
+        <h3 class="center-align">Sign up</h3>    
+      </div>
+    </div>
+    <div class="row">
+      <form class="col s10 push-s1 col m10 push-m2 col l8 push-l3">
+        <div class="row">
+          <div class="input-field col s6 col m5 col l4">
+            <input  id="first_name" type="text" class="validate">
+            <label for="first_name">Nombre</label>
+          </div>
+          <div class="input-field col s6 col m5 col l4">
+            <input id="last_name" type="text" class="validate">
+            <label for="last_name">Apellido</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12 col m10 col l8">
+            <input id="email" type="email" class="validate">
+            <label for="email">E-mail</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12 col m10 col l8">
+            <input id="password" type="password" class="validate">
+            <label for="password">Contraseña</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12 col m10 col l8">
+            <input id="confirm-password" type="password" class="validate">
+            <label for="password">Confirmar contraseña</label>
+          </div>
+        </div> 
+      </form>
+    </div> 
+    <div class="row">
+      <div class ="col s10 push-s1 col m10 push-m2 col l8 push-l3">
+        <form action="#">
+          <p>
+                <input type="checkbox" class="filled-in" id="filled-in-box" />
+                <label for="filled-in-box">Acepto los términos y condiciones</label>
+          </p>
+        </form>
+      </div>
+    </div>
+    <div class="row">
+        <div class ="col s5 push-s4 col m5 push-m5 col l5 push-l5">
+          <button class="btn waves-effect waves-light btn-sign-up" type="submit" name="action" disabled>Crear
+            <i class="material-icons right">send</i>
+          </button>
+        </div>
+    </div>         
+  </div>    
+  <script src="../vendors/js/jquery-3.2.1.min.js"></script>
+  <script src="../vendors/materialize/js/materialize.min.js"></script>
+  <script src="../js/sign-up.js"></script> 
+</body>
+</html>
