@@ -41,24 +41,42 @@ Resultados de la encuesta:
 
 **POR INTEGRAR**
 
-## Arquetipos: El usuario ideal
+## Arquetipo del usuario:
 
-#### Martin (28 años)
+### Frase de vida:
+"En el rol puedes crear mundos y ser cualquier persona, sin límites"
 
-Vive solo
-Trabaja en un startUp
-Trabaja muchas horas
-Es una persona sociable
-Le gusta leer muchos fanfics
-Fanático de Videojuegos
-Le gusta leer mangas y ver animes
-Muy Tech
-Muy desorganizado
+### Perfil:
 
-#### Objetivos de Martin en nuestra plataforma
+Sofía es una adolescente de 18 años, vive en San Juan de Lurigancho y estudia Pedagogía en un Instituto en el centro de la ciudad.
+Vive con sus padres y su hermano menor.
+Le gusta pasar tiempo en las redes sociales, y desde hace más de un año, es rolplayer. Maneja cinco cuentas en Facebook con diferentes personajes, entre varones y mujeres.
+A pesar de que tiene estudios que atender, pasa en promedio unas 8 horas al día en el rol. Principalmente ingresa a sus cuentas en su celular; así pueden atender sus mensajes aunque esté en clases.
+Sofía no es muy extrovertida, tiene un círculo pequeño de amigos cercanos, con los que sale los fines de semana.
+Se desenvuelve mejor en los juegos de rol en Facebook, donde siente que puede crear historias sin límites.
+Aún no tiene planes de dejar el rol, pues lo viene posponiendo año tras año. Mientras pueda tener tiempo para rolear, no piensa dejarlo.
 
-Desea tener diferentes perfiles para cada RolePlay
-Desea ingresar tanto en desktop como en mobile sin perder relación
+### Motivaciones:
+
+- Experimentar nuevas actividades.
+- Escribir profesionalmente.
+- Conocer personas de diferentes lugares.
+
+### Metas:
+- Culminar sus estudios.
+- En unos años, mudarse y vivir sola.
+
+### Frustraciones:
+- En ocasiones el rol afecta su vida personal.
+- Sus padres sospechan, poruque pasa mucho tiempo en redes sociales.
+- Tener que crear cuentas de respaldo por los cierres de sus cuentas.
+
+### Objetivos de Sofía en nuestra plataforma
+
+- Desea dejar de preocuparse por el cierre de sus cuentas.
+- Desea poder manejar diferentes perfiles desde una misma cuenta.
+- Desea una comunidad explusiva para rolplayers
+- Desea ingresar tanto en desktop como en mobile sin perder relación
 
 
 ## Stories: Casos de Uso.

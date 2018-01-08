@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+.container-sign-up {
+    background-image: url("../assets/images/go.svg");
+    background-repeat: no-repeat;
+    background-size: 35%;
+    background-position: 50% -20%;
+}      */
+
+.title {
+    margin-top: 6em;
+    margin-bottom: 2em;
+    color: #00d49d;
+}
+
+.btn-sign-up {
+    background:#ff005d;
+    margin-top: 2em;
+}    
+
+@media (max-width: 600px) {
+    .container-sign-up { 
+        border: 10px solid #fedf03;
+        border-radius: 10px;
+    }
+
+    .title {
+        margin-top: 2em;
+    }
+    
+    .btn-sign-up {
+        margin-top: 1em;
+    }    
+}
