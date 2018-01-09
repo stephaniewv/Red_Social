@@ -19,12 +19,12 @@
       </div>
     </div>  
     <div class="row">
-      <div class="col s10 offset-s1 col m8 col l8">
+      <div class="col s10 offset-s1 col m8 col l12">
         <h4 class="center-align">Empieza a crear tu mundo</h4>
       </div>
     </div>
     <div class="row">
-        <div class="col s12 col m8 col l8">
+        <div class="col s12 col m8 col l12">
           <h6 class="center-align">A continuación, llena los datos personales de tu personaje</h6>
         </div>
       </div>
@@ -52,18 +52,18 @@
           12-columns-wide on small screens  -->
 
         <div class="row">
-          <form class="col s12 col l12">
+          <form class="col s12 col l12" action="" method="post">
             <div class="row">
               <div class="input-field col s8 offset-s2">
                 <i class="material-icons prefix">account_circle</i>
-                <input id="icon_prefix" type="text" class="validate">
+                <input id="icon_prefix" type="text" class="validate pg-name">
                 <label for="icon_prefix">Nombre de tu personaje</label>
               </div>
             </div>
             <div class="row">
               <div class="input-field col s8 offset-s2">
                 <i class="material-icons prefix">filter_3</i>
-                <input id="icon_prefix" type="number" class="validate">
+                <input id="icon_prefix" type="number" class="validate pg-age">
                 <label for="icon_prefix">Edad</label>
               </div>
             </div>
@@ -71,13 +71,13 @@
               <div class="input-field col s8 offset-s2">
                 <i class="material-icons prefix">event</i>
                 <label for="icon_prefix"></label>
-                <input type="date" name="fecha" min="1985-01-01" max="2030-12-31" class="validate" >
+                <input type="date" name="fecha" min="1985-01-01" max="2030-12-31" class="validate birth" >
               </div>
             </div>
             <div class="row">
               <div class="input-field col s8 offset-s2">
                 <i class="material-icons prefix">edit_location</i>
-                <select>                  
+                <select class="country">                  
                   <option value="" disabled selected> País de residencia</option>
                   <option value="1">Perú</option>
                   <option value="2">Korea del Sur</option>
@@ -91,7 +91,7 @@
             <div class="row">
               <div class="input-field col s8 offset-s2">
                 <i class="material-icons prefix">favorite</i>
-                <select>                  
+                <select class="relationship">                  
                   <option value="" disabled selected>Estado civil</option>
                   <option value="1">Soltero</option>
                   <option value="2">En una relación</option>
@@ -104,7 +104,7 @@
             <div class="row">
               <div class="input-field col s8 offset-s2">
                 <i class="material-icons prefix">fingerprint</i>
-                <select>                  
+                <select class="thematic">                  
                   <option value="" disabled selected>Temática</option>
                   <option value="1">Ninguno</option>
                   <option value="2">Ciudad</option>
@@ -113,6 +113,11 @@
                   <option value="5">Estudiante</option>
                 </select>
                 <label></label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col s5 offset-s4">
+                <button class="btn waves-effect waves-light btn-start" type="button" name="action">¡Empezar!</button>
               </div>
             </div>
           </form> 
