@@ -1,12 +1,4 @@
-$( document ).ready(function() {
-  var $inputName = $('#first_name');
-  var $inputLastName = $('#last_name');
-  var $inputEmail = $('#email');
-  var $inputPassword = $('#password');
-  var $inputConfirmPassword = $('#confirm-password');
-  var $checkbox = $('#checkbox');
-
-  
+$(document).ready(function() {
   function nameValid() {
     return $('#first_name').val().length >= 3;
   }
