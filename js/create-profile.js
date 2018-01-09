@@ -28,7 +28,12 @@ $(document).ready(function() {
   /* Código para enviar a la siguiente vista*/
   $('.btn-start').on('click', function() {
     window.location.href = 'profile.html';
+    var nameUser = $('.pg-name').val();
+    localStorage.setItem('name', nameUser);
+    console.log(nameUser);
   }); 
+
+  
  
 
 });

@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.row {
+    margin-bottom: 0;
+}
+
+.portada {
+    background-image: url('../assets/images/notebook.jpg');
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+
+.user {
+    width: 15%;
+    border: 3px solid #00d49d;
+}
+
+
+.card-content {
+    background-color: #00d49d;
+}
+
+
+
+
+.container-display div img {
+    width: 100%;
+}
