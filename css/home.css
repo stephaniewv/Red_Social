@@ -5,7 +5,7 @@
     border-radius: 4px;
 }
 
-.navbar-fixed {
+.nav-extended {
     
     position: absolute;z-index:999999999;
 }
@@ -49,4 +49,8 @@
  .waves-effect {
     margin-top: 20px;
  }
+}
+
+@media (max-width: 993px) {
+
 }
