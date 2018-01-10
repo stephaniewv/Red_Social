@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="../vendors/materialize/css/materialize.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="../vendors/materialize/css/materialize-social.css">
+	<link rel="stylesheet" href="../css/inicio.css">
+	<title>Sign up</title>
+</head>
+
+<body>
+
+	<nav class="top-nav">
+		<div class="container">
+			<a href="#" data-activates="nav-mobile" class="button-collapse top-nav full hide-on-large-only">
+				<i class="material-icons">menu</i>
+			</a>
+			<div class="nav-wrapper">
+				<a class="page-title">Rolling</a>
+			</div>
+		</div>
+	</nav>
+
+	<ul id="nav-mobile" class="side-nav fixed" style="transform: translateX(0%);">
+		<li class="logo">
+			<a id="logo-container" href="#" class="brand-logo">
+				<img src="../assets/logotipo/logo2.png">
+			</a>
+		</li>
+
+		<li class="bold">
+			<a href="about.html" class="waves-effect waves-teal">Noticias</a>
+		</li>
+		<li class="bold">
+			<a href="getting-started.html" class="waves-effect waves-teal">Mensajes directos</a>
+		</li>
+		<li class="no-padding">
+			<ul class="collapsible collapsible-accordion">
+				<li class="bold">
+					<a class="collapsible-header waves-effect waves-teal">Perfiles</a>
+					<div class="collapsible-body">
+						<ul>
+							<li>
+								<a href="perfil1.html">Perfil 1</a>
+							</li>
+							<li>
+								<a href="perfil2.html">Perfil 2</a>
+							</li>
+							<li>
+								<a href="perfil3.html">Perfil 3</a>
+							</li>
+							<li>
+								<a href="perfil4.html">Perfil 4</a>
+							</li>
+							<li>
+								<a href="perfil5.html">Perfil 5</a>
+							</li>
+						</ul>
+					</div>
+				</li>
+				<li class="bold active">
+					<a class="collapsible-header active waves-effect waves-teal">Hermandades</a>
+					<div class="collapsible-body" style="display: block;">
+						<ul>
+							<li class="active">
+								<a href="hermandad1.html">Hermandad1</a>
+							</li>
+							<li>
+								<a href="hermandad2.html">Hermandad2</a>
+							</li>
+							<li>
+								<a href="hermandad3.html">Hermandad3</a>
+							</li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+		</li>
+		<li class="bold">
+			<a href="mobile.html" class="waves-effect waves-teal">Favoritos</a>
+		</li>
+		<li class="bold">
+			<a href="showcase.html" class="waves-effect waves-teal">Amigos</a>
+		</li>
+	</ul>
+
+	<main>
+		<div class="caption container containercard">
+			<div class="row">
+
+				<div class="card col s12 m9 110">
+					<div class="card-image waves-effect waves-block waves-light">
+						<!--<img class="activator" src="images/office.jpg"> -->
+					</div>
+					<div class="card-content">
+						<span class="card-title activator grey-text text-darken-4">Mi mundo</span>
+						<a class="btn-floating halfway-fab waves-effect waves-light red">
+							<i class="material-icons">add_a_photo</i>
+						</a>
+						<textarea id="textarea-post" class="materialize-textarea grey-text text-darken-4" placeholder="¿Qué vas a crear hoy?"></textarea>
+						<label for="textarea-post" class="active"></label>
+						<button class="btn waves-effect waves-light btn-post" type="button" name="action">Crear
+							<i class="material-icons right">border_color</i>
+						</button>
+					</div>
+				</div>
+
+				<!--Mi Posteo-->
+
+				<div class="card-container grey-text text-darken-4 text-post post-container col l12">
+
+				</div>
+			</div>
+		</div>
+	</main>
+
+
+
+	<script src="../vendors/js/jquery-3.2.1.min.js"></script>
+	<script src="../vendors/materialize/js/materialize.min.js"></script>
+	<script src="../js/inicio.js"></script>
+</body>
+
+</html>

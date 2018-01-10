@@ -1,0 +1,117 @@
+header .brand-logo {
+	margin-top: 0;
+	padding: 5px 5px;
+	width: 30%;
+	
+}
+
+ul.side-nav.fixed li.logo {
+	text-align: center;
+	margin-top: 32px;
+	margin-bottom: 80px
+}
+
+
+nav{
+	background: rgb(250,223,68);
+    background: -moz-linear-gradient(left, rgb(250,223,68) 0%, rgb(250,30,52) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgb(250,223,68)), color-stop(100%, rgb(250,30,52)));
+    background: -webkit-linear-gradient(left, rgb(250,223,68) 0%, rgb(250,30,52) 100%);
+    background: -o-linear-gradient(left, rgb(250,223,68) 0%, rgb(250,30,52) 100%);
+    background: -ms-linear-gradient(left, rgb(250,223,68) 0%, rgb(250,30,52) 100%);
+    background: linear-gradient(to right, rgb(250,223,68) 0%, rgb(250,30,52) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fadf44 ', endColorstr='#fa1e34 ', GradientType=1 );
+}
+
+/*
+.nav-wrapper {
+	margin: 0 30px
+}
+
+@media only screen and (max-width: 992px) {
+  nav .brand-logo {
+  	left: 50%;
+    -webkit-transform: none;
+    transform: none;
+
+} */
+
+ul.side-nav.leftside-navigation {
+	top: 64px;
+	overflow: hidden;
+}
+
+nav .nav-wrapper {
+	position: relative;
+	height: 100%;
+}
+
+.navbar-fixed {
+	position: relative;
+	height: 56px;
+	z-index: 998;
+}
+
+input.header-search-input {
+	display: block;
+	padding: 8px 8px 8px 72px;
+	width: 100%;
+	background: rgba(255,255,255,0.3);
+	height: 24px;
+	-webkit-transition: all 200ms ease;
+	transition: all 200ms ease;
+	border: none;
+	font-size: 16px;
+	appearance: textfield;
+	font-weight: 400;
+	outline: none;
+	border-radius: 3px;
+}
+
+.caption.container.containercard {
+    display: inline-block;
+	margin-left: 20px;
+}
+
+/* main */
+
+header, main, footer {
+    padding-left: 300px;
+}
+
+@media only screen and (max-width: 992px)
+{
+.side-nav.fixed {
+    -webkit-transform: translateX(-105%);
+    transform: translateX(-105%);
+}
+
+header, main, footer {
+    padding-left: 0px;
+}
+
+.caption{
+	zoom: .9;
+
+}
+
+.caption.container.containercard {
+	display: block;
+}
+
+
+@media only screen and (max-width: 992px)
+{
+	
+}
+nav .nav-wrapper {
+		text-align: center;
+}
+}
+
+.card-container.grey-text.text-darken-4.text-post.post-container.col.l12 {
+    /* display: inline-block; */
+    margin-left: 0;
+    padding: 0;
+	width: 75%;
+}

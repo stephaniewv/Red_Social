@@ -52,6 +52,8 @@ img.responsive-img, video.responsive-video {
 }
 
 
+
+
 @media (max-width: 600px) {
     /* .container-sign-up { 
         border: 10px solid #fedf03;
@@ -66,17 +68,12 @@ img.responsive-img, video.responsive-video {
         margin-top: 1em;
     }    
 
-    body {
-        background-image: none;
-    }
+
+}
 }
 
-@media (min-width: 601px) {
-    body {
-        background-image: url("../assets/images/go.svg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: 25%;
-          
+@media only screen and (max-width: 600px) {
+    imglogo a img {
+        margin-top: 10px;
     }
 }
