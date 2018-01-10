@@ -4,13 +4,34 @@
     padding: 0;
 }
 
+html {
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    height: 100vh;
+}
 
 body {
-    background-image: url("../assets/images/go.svg");
+
+    vertical-align: middle;
+    background-image: url("../assets/images/fondo2.png");
     background-repeat: no-repeat;
     background-position: 100%;
     background-size: cover;
-}      
+}   
+
+.card-panel{
+    width: 100%;
+}
+
+
+img.responsive-img, video.responsive-video {
+   
+    height: 20vh;
+    margin-top: 20px;
+}
+
 
 .title {
     margin-top: 6em;
@@ -21,13 +42,21 @@ body {
 .btn-sign-up {
     background:#ff005d;
     margin-top: 2em;
-}    
+}
+
+@media (max-width:1360px) {
+
+    html {
+        
+        align-items: center;
+}
+
 
 @media (max-width: 600px) {
-    .container-sign-up { 
+    /* .container-sign-up { 
         border: 10px solid #fedf03;
         border-radius: 10px;
-    }
+    } */
 
     .title {
         margin-top: 2em;
