@@ -98,6 +98,14 @@ Brindamos una plataforma responsive que les permite crear perfiles rolplayers. L
 6. Starter: Al dar click al botón "Crear starter", se muestra la creación de historias con otros personajes. El botón flotante permite al personaje con el que se está jugando, seguir desarrollando la historia.
 7. Inicio: A través del botón del inicio situado en el navbar del perfil, se direccion a una vista con las actualizaciones de sus amigos y también puede acceder a sus otras vidas.
 
+### Herramientas utilizadas:
+
+1. HTML5
+2. CSS3
+3. Javascript
+4. jQuery
+5. Materialize
+
 ### **Integrantes**
 >##### Yelitza Deyanira Cisneros Torre
 >##### Stephanie Carolina Wong Vega
