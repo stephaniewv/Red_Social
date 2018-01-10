@@ -1,5 +1,8 @@
 $(document).ready(function() {
 
+ 
+        
+
   var inputName = localStorage.getItem('name');
   var inputAge =  localStorage.getItem('age');
   /* Para obetener el nombre puesto en el form del personaje */
@@ -117,5 +120,9 @@ $(document).ready(function() {
       $('.tematica').text('Temática: ' + thematic);
     })
   });
+
+
+  
+
 });
 

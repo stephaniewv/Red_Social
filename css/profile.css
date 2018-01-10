@@ -30,15 +30,7 @@ nav {
 width: 30%;
 }
 
-@media only screen and (max-width: 992px){
 
-nav .brand-logo {
- -webkit-transform: none; 
-transform:none; 
-
-}
-
-/* Fin Navbar */
 .logo {
     width: 80%;
     margin-left: 80%;
@@ -83,9 +75,16 @@ transform:none;
 
 .btn-img {
     margin-top: 2.3em;
-    margin-bottom: 2em;
-    
+    margin-bottom: 2em;  
 }
+
+.btn-new-starter {
+    background-color: #fadf44;
+    color: #fff;
+    margin-top: 1em;
+}
+
+
 .title-img {
     color: #fff;
     background-color: #f41e34;
@@ -159,3 +158,12 @@ hr {
 .tap-target-wrapper {
     right: -0.95px !important;
 } 
+
+
+
+@media only screen and (max-width: 992px){  
+    nav .brand-logo {
+     -webkit-transform: none; 
+    transform:none; 
+    }
+}
