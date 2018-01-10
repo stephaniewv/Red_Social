@@ -24,6 +24,18 @@ $(document).ready(function() {
     layoutTemplates: {main2: '{preview} ' + btnCust + ' {remove} {browse}'},
     allowedFileExtensions: ['jpg', 'png', 'gif']
   });
+
+  /* Código para elegir la fecha de nacimiento*/
+
+  $('.datepicker').pickadate({
+    selectMonths: true, // Creates a dropdown to control month
+    selectYears: 15, // Creates a dropdown of 15 years to control year,
+    today: 'Today',
+    clear: 'Clear',
+    close: 'Ok',
+    closeOnSelect: false // Close upon selecting a date,
+  });
+        
       
   /* Código para enviar a la siguiente vista*/
   $('.btn-start').on('click', function() {
@@ -34,9 +46,5 @@ $(document).ready(function() {
     localStorage.setItem('age', agePg);
     console.log(nameUser);
   }); 
-
-  
- 
-
 });
 
