@@ -5,16 +5,17 @@
     border-radius: 4px;
 }
 
+/* Navbar */
+
 .nav-extended {
-    
     position: absolute;z-index:999999999;
 }
-
-
 
 .nav-wrapper {
     margin: 0 30px
 }
+
+/* Fin Navbar */
 
 .slider .slides li .caption {
     top: 30%;
