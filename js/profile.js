@@ -128,4 +128,3 @@ $(document).ready(function() {
     window.location.href = '../views/starter.html';
   });
 });
-
