@@ -1,12 +1,12 @@
 body {
 
     vertical-align: middle;
-    background-image: url("../assets/images/fondo2.png");
+    background-image: url(../assets/images/fondo2.png);
     background-repeat: no-repeat;
-    background-position: 100%;
     background-size: cover;
-    height: auto;
-}   
+    height: 100vh;
+    background-position: center;
+}
 
 /* Navbar */
 
@@ -49,8 +49,8 @@ body {
 }
 
 .card-panel {
-
     margin: auto;
+    width: 50%;
 }
    
 
@@ -67,7 +67,10 @@ body {
 }
 
 @media (max-width: 993px) {
-
+    .card-panel {
+        margin: auto;
+        width: 90%;
+    } 
 }
 
 @media only screen and (max-width: 992px) {

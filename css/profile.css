@@ -4,6 +4,7 @@
     padding: 0;
 }
 
+/* Navbar */
 
 nav {
     height: 100px;
@@ -17,6 +18,27 @@ nav {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fadf44 ', endColorstr='#fa1e34 ', GradientType=1 );
 }
 
+.nav-extended {
+    z-index:999999999;
+}
+
+.nav-wrapper {
+    margin: 0 30px
+}
+
+.imglogo img{
+width: 30%;
+}
+
+@media only screen and (max-width: 992px){
+
+nav .brand-logo {
+ -webkit-transform: none; 
+transform:none; 
+
+}
+
+/* Fin Navbar */
 .logo {
     width: 80%;
     margin-left: 80%;
