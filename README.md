@@ -33,11 +33,16 @@ Comentarios de usuarios de la página Roleados.
 
 ## Research: Entendiendo las necesidades del usuario
 
-Para crear nuestra red social se ha realizado entrevistas de uno a uno y encuestas (vía **SurveyMonkey**) para conocer las necesidades del usuario y así ofrecerles una mejor experiencia.
+Para crear nuestra red social se ha realizado entrevistas a través de Google Drive para conocer las necesidades del usuario y así conocer sus necesidades y  ofrecerles una mejor experiencia.
 
-Encuesta: https://es.surveymonkey.com/r/9RHQKRN
+Encuesta: https://docs.google.com/forms/d/1pCfJyXkExKflLrU_cBmC0HnUtxJnc3Tpmwlsn1V5sFo/edit#responses
 
-Resultados de la encuesta:
+Resultados de la encuesta: https://docs.google.com/spreadsheets/d/15LwXZlGyGThu5hBZqCm-4o6AzfmyfRzYdAk4eL1WDPI/edit#gid=516445345
+
+Conclusiones de la encuesta: 
+1. La principal causa de molestia de los usuarios es el cierre de cuentas de Facebook.
+2. En promedio los usuarios acceden entre 4 y 7 horas a sus cuentas de rol.
+3. Los usuarios siguen temáticas.
 
 **POR INTEGRAR**
 
@@ -79,16 +84,21 @@ Aún no tiene planes de dejar el rol, pues lo viene posponiendo año tras año. 
 - Desea ingresar tanto en desktop como en mobile sin perder relación
 
 
-## Stories: Casos de Uso.
+## Propuesta de producto:
+Nuestra propuesta es una red social llamada "Rolling", que significa movimiento. Con ello queremos captar la fluidez con que los usuarios crean historias y forman lazos entre ellos.
+Brindamos una plataforma responsive que les permite crear perfiles rolplayers. La verificación que ofrecemos al acepter los términos y condiciones, permite a nuestra plataforma brindar un espacio seguro para evitar el cierre de cuentas. A la vez, evitamos que personas externas confundan los perfiles de nuestros usuarios como reales.
 
+### Flujo de aplicación:
 
-
-
-
+1. Vista Splash: Primera vista donde el usuario es saludado con el logo de nuestra red social.
+2. Home: Segunda vista donde se ofrece información sobre nuestro servicio.
+3. Sign up: Al hacer click al botón de "Sign up", genera un formulario para generar una cuenta. Se pide el registro a través deñ correp electrónico.
+4. Create profile: Vista donde se llenan los datos del personaje.
+5. Profile: Perfil del personaja creado. Se muestra una imagen de portada y su imagen de perfil. Presenta espacios para generar estados, galerías y starter. Además de una ficha sobre la historia del personaje.
+6. Starter: Al dar click al botón "Crear starter", se muestra la creación de historias con otros personajes. El botón flotante permite al personaje con el que se está jugando, seguir desarrollando la historia.
+7. Inicio: A través del botón del inicio situado en el navbar del perfil, se direccion a una vista con las actualizaciones de sus amigos y también puede acceder a sus otras vidas.
 
 ### **Integrantes**
-
-
 >##### Yelitza Deyanira Cisneros Torre
 >##### Stephanie Carolina Wong Vega
 
