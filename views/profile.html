@@ -16,15 +16,60 @@
   <div class="">
     <div class="row">
       <div class="col s12 l12">
-        <nav>
+        <nav class="nav-extended transparent z-depth-0">
           <div class="nav-wrapper">
-            <a href="#" class="brand-logo"><img src="../assets/logotipo/logowhite.png" alt="" class="logo"></a>
+            <div class="imglogo">
+              <a href="#" class="brand-logo">
+                <img src="../assets/logotipo/logowhite.png">
+              </a>
+            </div>
+            <a href="#" data-activates="mobile-demo" class="button-collapse">
+              <i class="material-icons">menu</i>
+            </a>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
-              <li><a id="menu" class="waves-effect waves-light btn btn-floating"><i class="material-icons">group_add</i></a></li>
-              <li><a><i class="material-icons">person</i></a></li>
-              <li><a><i class="material-icons">web</i></a></li>
-              <li><a><i class="material-icons">chat</i></a></li>
-              <li><a><i class="material-icons">notifications</i></a></li>
+            <li>
+              <a id="menu" class="waves-effect waves-light btn btn-floating">
+                <i class="material-icons">group_add</i>
+              </a>
+            </li>
+            <li>
+              <a>
+                <i class="material-icons">person</i>
+              </a>
+            </li>
+            <li>
+              <a>
+                <i class="material-icons">web</i>
+              </a>
+            </li>
+            <li>
+              <a>
+                <i class="material-icons">chat</i>
+              </a>
+            </li>
+            <li>
+              <a>
+                <i class="material-icons">notifications</i>
+              </a>
+            </li>
+            </ul>
+          </div>
+           <ul class="side-nav" id="mobile-demo">
+              <li>
+                <a><i class="material-icons">person</i>Mi Perfil</a>
+              </li>
+              <li>
+                <a>
+                  <i class="material-icons">web</i>Home</a>
+              </li>
+              <li>
+                <a>
+                  <i class="material-icons">chat</i>Chat</a>
+              </li>
+              <li>
+                <a>
+                  <i class="material-icons">notifications</i>Notificaciones</a>
+              </li>
             </ul>
           </div>
         </nav>
@@ -40,7 +85,7 @@
       </div>
     </div>
     <div class="row">
-      <div class="col s12 m4 l3 parallax user-details">
+      <div class="col s12 m12 l3 parallax user-details">
         <h3 id="pg-name" class="center-align"></h3> 
         <div class="card">
           <div class="card-content">
@@ -50,7 +95,10 @@
           </div>
         </div>
         <hr>
-        <div class="col s12 container-display btn-img">
+        <div class="col l10 offset-s2 offset-l2 offset-m4">
+            <a class="waves-effect waves-light btn btn-new-starter"><i class="material-icons left">create</i>Crear un Starter</a>
+          </div>    
+        <div class="col s12 container-display btn-img">      
           <div class="col s6"> 
             <span class="title-img btn-gal">Galería</span>
           </div>
@@ -59,15 +107,15 @@
           </div>  
         </div>
 
-        <div class="col s12 container-display container-gal">      
+        <div class="col m12 s12 container-display container-gal">      
          <!-- Aquí se añadirán las imágenes de su galería -->
         </div>
-        <div  class="col s12 container-display container-starter">
+        <div  class="col m12 s12 container-display container-starter">
           <!-- Aquí se añadirán las imágenes de su starters -->
         </div>
       </div>
-      <div class="col s12 m8 l5 card-container"> 
-        <div class="card col l12 este">
+      <div class="col s12 m12 l5 card-container"> 
+        <div class="card col s11 m11 l12">
           <div class="card-image waves-effect waves-block waves-light">
             <!--<img class="activator" src="images/office.jpg"> -->
           </div>
@@ -82,7 +130,7 @@
           </div>           
         </div>
       </div>
-      <div class="col l3 history">
+      <div class="col m12 l3 history">
         <h3 class="center-align">Mi historia</h3>
         <p class="center-align">『Nombre Completo』</p>
           <p class="center-align history-name"></p>

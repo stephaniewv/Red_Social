@@ -1,7 +1,11 @@
 $(document).ready(function() {
 
+  /* Inicializador del botón del menu hamburguesa */
+  $('.button-collapse').sideNav();
+
+  /* Obteniendo datos del personaje, llenado por el usuario*/
   var inputName = localStorage.getItem('name');
-  var inputAge =  localStorage.getItem('age');
+  var inputAge = localStorage.getItem('age');
   /* Para obetener el nombre puesto en el form del personaje */
   $('#pg-name').html(inputName);
   $('.history-name').html(inputName);
@@ -12,22 +16,23 @@ $(document).ready(function() {
  
 
   var imagesGallery = imgGallery; // el array de la galería
-  var imagesStarter = imgStarter;
+  var imagesStarter = imgStarter; // el array del starter
  
-
+  /* Función para recorrer las imágenes de la galeria */
   for (var i = 0; i < imagesGallery.length; i++) {
-    var img = $('<img>' , {
+    var img = $('<img>', {
       'class': 'responsive-img col s6',
-    })
+    });
     img.attr('src', '../assets/images/gallery' + '/' + imagesGallery[i]);
     console.log(i);
     $('.container-gal').append(img);
   }
 
+  /* Función para recorrer las imágenes de los starter */
   $('.btn-st').one('click', function() {
     $('.container-gal').addClass('hide');
     for (var i = 0; i < imagesStarter.length; i++) {
-      var img = $('<img>' , {
+      var img = $('<img>', {
         'class': 'responsive-img col s6',
       });
       img.attr('src', '../assets/images/starter' + '/' + imagesStarter[i]);
@@ -115,7 +120,12 @@ $(document).ready(function() {
       $('.edad').text(ageCharacter);
       $('.situacion').text(relationship);
       $('.tematica').text('Temática: ' + thematic);
-    })
+    });
+  });
+
+  /* Redireccionando a la vista del starter */
+  $('.btn-new-starter').click(function() {
+    window.location.href = '../views/starter.html';
   });
 });
 

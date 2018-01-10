@@ -17,6 +17,20 @@ nav {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fadf44 ', endColorstr='#fa1e34 ', GradientType=1 );
 }
 
+.nav-extended {
+    z-index:999999999;
+}
+
+.nav-wrapper {
+    margin: 0 30px
+}
+
+.imglogo img{
+   width: 30%;
+}
+
+
+
 .logo {
     width: 80%;
     margin-left: 80%;
@@ -61,9 +75,16 @@ nav {
 
 .btn-img {
     margin-top: 2.3em;
-    margin-bottom: 2em;
-    
+    margin-bottom: 2em;  
 }
+
+.btn-new-starter {
+    background-color: #fadf44;
+    color: #fff;
+    margin-top: 1em;
+}
+
+
 .title-img {
     color: #fff;
     background-color: #f41e34;
@@ -137,3 +158,12 @@ hr {
 .tap-target-wrapper {
     right: -0.95px !important;
 } 
+
+
+
+@media only screen and (max-width: 992px){  
+    nav .brand-logo {
+     -webkit-transform: none; 
+    transform:none; 
+    }
+}
