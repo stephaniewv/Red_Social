@@ -98,3 +98,42 @@ hr {
    color: #fff;
    border-radius: 5px;
 }
+
+.friend {
+    width: 30%;
+    margin-top: 1.5em;
+    margin-left: 12em;
+    margin-right: 2em;
+}
+
+.nombre {
+    display: inline-block;
+}
+
+.display-post {
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.display-p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+}
+
+.add-friend {
+    margin-left: 2em;
+    font-size: 3em;
+    cursor: pointer;
+}
+
+.tap-target {
+    background-color: #fa1e34;
+    color: #fff;
+}
+
+.tap-target-wrapper {
+    right: -0.95px !important;
+} 

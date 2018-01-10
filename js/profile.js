@@ -89,5 +89,33 @@ $(document).ready(function() {
     textArea.val(''); 
   });
 
+  $.each(friends, function(key, value) {
+    /*  nombres de los personajes */
+    var character = key;
+    // console.log(restaurant); 
+
+    //  los valores de cada key(personaje) 
+    var content = value;
+    // console.log(content);
+
+    // contenido de la tematica. 
+    var thematic = content.tematica;
+    // console.log(location);
+
+    var ageCharacter = content.edad;
+    var relationship = content.situacion;
+
+    var imagenes = content.profile;
+
+    $('#menu').click(function() {
+      $('.tap-target').tapTarget('open');
+      $('.friend').attr('src', '../assets/images/friends/' + imagenes);
+      $('.friend').addClass('responsive-img circle');
+      $('.nombre').text(character);
+      $('.edad').text(ageCharacter);
+      $('.situacion').text(relationship);
+      $('.tematica').text('Temática: ' + thematic);
+    })
+  });
 });
 

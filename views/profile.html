@@ -21,6 +21,7 @@
           <div class="nav-wrapper">
             <a href="#" class="brand-logo"><img src="../assets/logotipo/logowhite.png" alt="" class="logo"></a>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
+              <li><a id="menu" class="waves-effect waves-light btn btn-floating"><i class="material-icons">group_add</i></a></li>
               <li><a><i class="material-icons">person</i></a></li>
               <li><a><i class="material-icons">web</i></a></li>
               <li><a><i class="material-icons">chat</i></a></li>
@@ -44,54 +45,49 @@
         <h3 id="pg-name" class="center-align"></h3> 
         <div class="card">
           <div class="card-content">
-              <p class="card-title center-align">Pensamiento del día</p>
-                <textarea id="textarea1" class="materialize-textarea"></textarea>
-                <label for="textarea1"></label>
+            <p class="card-title center-align">Pensamiento del día</p>
+            <textarea id="textarea1" class="materialize-textarea"></textarea>
+            <label for="textarea1"></label>
           </div>
         </div>
         <hr>
         <div class="col s12 container-display btn-img">
-            <div class="col s6"> 
-              <span class="title-img btn-gal">Galería</span>
-            </div>
-            <div class="col s6"> 
-              <span class="title-img btn-st">Starters</span>
-            </div>  
+          <div class="col s6"> 
+            <span class="title-img btn-gal">Galería</span>
+          </div>
+          <div class="col s6"> 
+            <span class="title-img btn-st">Starters</span>
+          </div>  
         </div>
 
-        
         <div class="col s12 container-display container-gal">      
          <!-- Aquí se añadirán las imágenes de su galería -->
         </div>
         <div  class="col s12 container-display container-starter">
           <!-- Aquí se añadirán las imágenes de su starters -->
         </div>
-
-
-        </div>
-        <div class="col s12 m8 l5 card-container"> <!-- Note that "m8 l9" was added -->
-              <div class="card col l12 este">
-                  <div class="card-image waves-effect waves-block waves-light">
-                    <!--<img class="activator" src="images/office.jpg"> -->
-                  </div>
-                  <div class="card-content">
-                    <span class="card-title activator grey-text text-darken-4">Mi mundo</span>
-                    <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add_a_photo</i></a>
-                    <textarea id="textarea-post" class="materialize-textarea grey-text text-darken-4" placeholder="¿Qué vas a crear hoy?"></textarea>
-                    <label for="textarea-post"></label>
-                    <button class="btn waves-effect waves-light btn-post disabled" type="button" name="action" >Crear
-                      <i class="material-icons right">border_color</i>
-                    </button>
-                  </div>           
+      </div>
+      <div class="col s12 m8 l5 card-container"> 
+        <div class="card col l12 este">
+          <div class="card-image waves-effect waves-block waves-light">
+            <!--<img class="activator" src="images/office.jpg"> -->
           </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">Mi mundo</span>
+            <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add_a_photo</i></a>
+            <textarea id="textarea-post" class="materialize-textarea grey-text text-darken-4" placeholder="¿Qué vas a crear hoy?"></textarea>
+            <label for="textarea-post"></label>
+            <button class="btn waves-effect waves-light btn-post disabled" type="button" name="action" >Crear
+              <i class="material-icons right">border_color</i>
+            </button>
+          </div>           
         </div>
-        <div class="col l3 history">
-          <h3 class="center-align">Mi historia</h3>
-          <p class="center-align">『Nombre Completo』 </p>
-          
+      </div>
+      <div class="col l3 history">
+        <h3 class="center-align">Mi historia</h3>
+        <p class="center-align">『Nombre Completo』</p>
           <p class="center-align history-name"></p>
-          
-          <p class="center-align">『Apodo』 </p>
+          <p class="center-align">『Apodo』</p>
           <p class="center-align">Ren</p>
           <p class="center-align">『Edad』 </p>
           <p class="center-align history-age"></p>
@@ -108,31 +104,43 @@
           <p class="center-align">  • ───────── • </p>
           <p class="center-align">『Características personales』</p>
           <ul class="center-align">
-          <li>Disfruta de la literatura fantástica y la ciencia ficción</li>
-          <li>Curioso y un poco ingenuo</li>
-          <li>Reservado</li>
-          <li>No tiene un gran sentido del humor, de hecho, puede ser muy simple</li>
-          <li>Demasiado tranquilo</li>
-          <li>Suele ser demasiado serio e incluso pudiera abusar del trato de etiqueta</li>
-          <li>Le fascina el aroma y el sabor de la vainilla</li>
-          <li>Fuma de forma ocasional</li>
-          <li>No entiende el mundo actual pero evita a toda costa demostrarlo</li>
-          <li>Al recurrir a la alquimia su energía suele desprender un humo de tonalidad aqua casi menta</li>
-          <li>Le fascinan los chocolates</li>
-        </ul>
-        <p class="center-align">  • ───────── • </p>
-          
-          
-          
-
-
+            <li>Disfruta de la literatura fantástica y la ciencia ficción</li>
+            <li>Curioso y un poco ingenuo</li>
+            <li>Reservado</li>
+            <li>No tiene un gran sentido del humor, de hecho, puede ser muy simple</li>
+            <li>Demasiado tranquilo</li>
+            <li>Suele ser demasiado serio e incluso pudiera abusar del trato de etiqueta</li>
+            <li>Le fascina el aroma y el sabor de la vainilla</li>
+            <li>Fuma de forma ocasional</li>
+            <li>No entiende el mundo actual pero evita a toda costa demostrarlo</li>
+            <li>Al recurrir a la alquimia su energía suele desprender un humo de tonalidad aqua casi menta</li>
+            <li>Le fascinan los chocolates</li>
+          </ul>
+          <p class="center-align">  • ───────── • </p>       
         </div>
-      </div>
-   
-     
+      </div> 
       
-    </div>
-  </div>    
+      <!-- Tap Target de sugerencia de amistad -->
+   
+    </div>  
+    <div class="tap-target-wrapper"> 
+      <div class="tap-target" data-activates="menu">
+        <div class="tap-target-content">
+          <h5 class="center-align">Sugerencias de amistad</h5>
+          <p class="center-align">¡Creemos juntos una historia!</p>
+          <div class="display-post">
+            <img  alt="" class="friend">
+            <div class="display-p">
+              <h5 class="nombre center-align"></h5>
+              <p class="edad"></p>
+              <p class="situacion"></p>
+              <p class="tematica center-align"></p>
+            </div>
+            <i class="material-icons add-friend z-depth-3">favorite</i>
+          </div>
+        </div>
+      </div> 
+    </div>    
     
   <script src="../vendors/js/jquery-3.2.1.min.js"></script>
   <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
