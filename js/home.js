@@ -1,6 +1,5 @@
-$(document).ready(function(){
-    $('.slider').slider({height:700});
-    $(".button-collapse").sideNav();
-    
-  });
+$(document).ready(function() {
+  $('.slider').slider({height: 700});
+  $('.button-collapse').sideNav();
+});
       
