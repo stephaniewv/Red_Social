@@ -127,4 +127,8 @@ $(document).ready(function() {
   $('.btn-new-starter').click(function() {
     window.location.href = '../views/starter.html';
   });
+
+  $('.web').click(function() {
+    window.location.href = '../views/inicio.html';
+  });
 });
