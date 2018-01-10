@@ -42,26 +42,54 @@ $(document).ready(function() {
     $('.btn-floating').detach();
   })
 
-  $('.btn-post').click(function() {
-    event.preventDefault();
-    newCard();
-  })
+  var btn = $('.btn-post');
+  var textArea = $('#textarea-post');
   
-  function newCard() {
 
-    var span = $('<span class = "card-title activator grey-text text-darken-4">Mi Mundo</span>');
-    var anchor = $('<a class= "btn-floating halfway-fab waves-effect waves-light red" ><i class= "material-icons" >add</i></a>');
-    var textarea = $('<textarea id="textarea1" class= "materialize-textarea" placeholder= "¿Qué vas a crear hoy?"></textarea>')
+  $(textArea).keypress(function(event) {
+    btn.removeClass('disabled');
+    var text = textArea.val();
+    console.log(text);
     
-    var container = $('<div class = "card-content"></div>');
-    var card = $('<div class = "card col l12" ></div>');
-    var cardImage = $('<div class= "card-image waves-effect waves-block waves-light"></div>');
-    var bigContainer = $('.card-container');
-    var btn = $('<button class="btn waves-effect waves-light btn-post" type="button" name="action">Crear<i class="material-icons right">border_color</i></button>');
-    container.append(span, anchor, textarea, btn);
-    card.append(cardImage, container);
-    bigContainer.prepend(card);
-  }
+  });
+  
+
+  $(btn).click(function() {
+    event.preventDefault();
+    var postBox = $('<div class="card grey-text text-darken-4 text-post post-container col l12"></div>');
+    var box = $('<div class= "card-content"></div>');
+    var parrafo = $('<p/>', {
+      'html': textArea.val()
+    });
+
+    var date = new Date();
+    var strDate = date.getHours() + ':' + date.getMinutes(); 
+
+    var timeContainer = $('<div/>', {
+      'class': 'right-align'
+    });
+    var timeContent = $('<p/>', {
+      'text': strDate,
+    });
+
+
+    /*
+    var buttons = $('<div class="fixed-action-btn"></div>')
+    var anchor = $('<a class= "btn-floating btn-large red ><i class= "large material-icons" >mode_edit</i></a>');
+    var list = $('<ul/>');
+    var items = $('<li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>');
+    var item1 = $('<li><a class="btn-floating yellow darken-1"><i class="material-icons">grade</i></a></li>'); */
+
+    timeContainer.addClass('text-post');
+    timeContainer.append(timeContent);  
+    box.append(parrafo, timeContainer);
+    postBox.append(box);
+    $('.card-container').append(postBox);
+    console.log(textArea.val());
+    textArea.val('');
+
+    
+  })
 
   $('.history-name').html(inputName);
 
