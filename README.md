@@ -1,5 +1,9 @@
 ![logo](assets/images/logo_laboratoria.png)
 
+### VISTA DE LA PÁGINA: GH-PAGES
+
+https://stephaniewv.github.io/Red_Social/
+
 ## PRODUCTO FINAL : RED SOCIAL PARA ROLPLAYERS
 
 
@@ -79,9 +83,27 @@ Aún no tiene planes de dejar el rol, pues lo viene posponiendo año tras año. 
 - Desea ingresar tanto en desktop como en mobile sin perder relación
 
 
-gh-pages
+## Propuesta de producto:
+Nuestra propuesta es una red social llamada "Rolling", que significa movimiento. Con ello queremos captar la fluidez con que los usuarios crean historias y forman lazos entre ellos.
+Brindamos una plataforma responsive que les permite crear perfiles rolplayers. La verificación que ofrecemos al acepter los términos y condiciones, permite a nuestra plataforma brindar un espacio seguro para evitar el cierre de cuentas. A la vez, evitamos que personas externas confundan los perfiles de nuestros usuarios como reales.
 
-https://stephaniewv.github.io/Red_Social/
+### Flujo de aplicación:
+
+1. Vista Splash: Primera vista donde el usuario es saludado con el logo de nuestra red social.
+2. Home: Segunda vista donde se ofrece información sobre nuestro servicio.
+3. Sign up: Al hacer click al botón de "Sign up", genera un formulario para generar una cuenta. Se pide el registro a través deñ correp electrónico.
+4. Create profile: Vista donde se llenan los datos del personaje.
+5. Profile: Perfil del personaja creado. Se muestra una imagen de portada y su imagen de perfil. Presenta espacios para generar estados, galerías y starter. Además de una ficha sobre la historia del personaje.
+6. Starter: Al dar click al botón "Crear starter", se muestra la creación de historias con otros personajes. El botón flotante permite al personaje con el que se está jugando, seguir desarrollando la historia.
+7. Inicio: A través del botón del inicio situado en el navbar del perfil, se direccion a una vista con las actualizaciones de sus amigos y también puede acceder a sus otras vidas.
+
+### Herramientas utilizadas:
+
+1. HTML5
+2. CSS3
+3. Javascript
+4. jQuery
+5. Materialize
 
 
 
