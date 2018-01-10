@@ -4,6 +4,7 @@
     padding: 0;
 }
 
+/* Navbar */
 
 nav {
     height: 100px;
@@ -26,9 +27,8 @@ nav {
 }
 
 .imglogo img{
-   width: 30%;
+width: 30%;
 }
-
 
 
 .logo {
