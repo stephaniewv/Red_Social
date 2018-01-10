@@ -1,47 +1,48 @@
 $(document).ready(function() {
 
   var inputName = localStorage.getItem('name');
+  var inputAge =  localStorage.getItem('age');
+  /* Para obetener el nombre puesto en el form del personaje */
   $('#pg-name').html(inputName);
+  $('.history-name').html(inputName);
+  $('.history-age').html(inputAge);
 
+  /* Activando del textarea de Materialize */
   $('#textarea1').trigger('autoresize');
  
-  var imgSta = imgStarter;
-  console.log(imgSta);
-  var $imgSt = $('<img>', {
-    'class': 'responsive-img',
+
+  var imagesGallery = imgGallery; // el array de la galería
+  var imagesStarter = imgStarter;
+ 
+
+  for (var i = 0; i < imagesGallery.length; i++) {
+    var img = $('<img>' , {
+      'class': 'responsive-img col s6',
+    })
+    img.attr('src', '../assets/images/gallery' + '/' + imagesGallery[i]);
+    console.log(i);
+    $('.container-gal').append(img);
+  }
+
+  $('.btn-st').one('click', function() {
+    $('.container-gal').addClass('hide');
+    for (var i = 0; i < imagesStarter.length; i++) {
+      var img = $('<img>' , {
+        'class': 'responsive-img col s6',
+      });
+      img.attr('src', '../assets/images/starter' + '/' + imagesStarter[i]);
+      console.log(i);
+      $('.container-starter').append(img);
+    }
   });
 
+  /* Mostrando y ocultando las imágenes */
+  $('.btn-gal').one('click', function() {
+    $('.container-starter').addClass('hide'); 
+    $('.container-gal').removeClass('hide');
+  });
 
-  $('.btn-st').click(function() {
-  
-    for(var i = 0; i<imgSta.length; i++) {
-       $imgSt.attr('src', '../assets/images/starter' + '/' + imgSta[i]);
-       $('.gal-img', {
-        'id': [i]
-       });
-      console.log(i);
-    }
-
-    //console.log(i);
-    //console.log($imgSt);
-    $('#'[i]).replaceWith($imgSt);   
-  })
-
-  $('.btn-gal').click(function() {
-    $imgSt.hide();
-  })
-
-  $('.btn-floating').click(function() {
-    event.preventDefault();
-    var $imgProfile = $('<img>', {
-      'class': 'activator',
-      'src': '../assets/images/card-profile.jpg'
-    })
-
-    $('.card-image').append($imgProfile);
-    $('.btn-floating').detach();
-  })
-
+  /* Código para la funcionalidad de los post */
   var btn = $('.btn-post');
   var textArea = $('#textarea-post');
   
@@ -49,8 +50,7 @@ $(document).ready(function() {
   $(textArea).keypress(function(event) {
     btn.removeClass('disabled');
     var text = textArea.val();
-    console.log(text);
-    
+    console.log(text); 
   });
   
 
@@ -86,12 +86,8 @@ $(document).ready(function() {
     postBox.append(box);
     $('.card-container').append(postBox);
     console.log(textArea.val());
-    textArea.val('');
-
-    
-  })
-
-  $('.history-name').html(inputName);
+    textArea.val(''); 
+  });
 
 });
 

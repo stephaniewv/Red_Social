@@ -30,6 +30,8 @@ $(document).ready(function() {
     window.location.href = 'profile.html';
     var nameUser = $('.pg-name').val();
     localStorage.setItem('name', nameUser);
+    var agePg = $('.pg-age').val();
+    localStorage.setItem('age', agePg);
     console.log(nameUser);
   }); 
 
