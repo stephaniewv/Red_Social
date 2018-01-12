@@ -1,82 +1,84 @@
 body {
-
-    vertical-align: middle;
-    background-image: url(../assets/images/fondo2.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-    background-position: center;
+display: flex;
+min-height: 100vh;
+flex-direction: column;
+vertical-align: middle;
+background-image: url(../assets/images/fondo2.png);
+background-repeat: no-repeat;
+background-size: cover;
+height: 100vh;
+background-position: center;
 }
 
 /* Navbar */
 
 .nav-extended {
-    z-index:999999999;
+  z-index:999999999;
 }
 
 .nav-wrapper {
-    margin: 0 30px
+  margin: 0 30px
 }
 
 /* Fin Navbar */
 
 .slider .slides li .caption {
-    top: 30%;
+  top: 30%;
 }
 
 .slider .slides{
-    background-color: #5f4a00;
+  background-color: #5f4a00;
 }
 
 .slidessize img{
-    opacity: 0.6;
+  opacity: 0.6;
 }
 
 .material-icons {
-    font-size: 60px;
-    color: #4caf50;
+  font-size: 60px;
+  color: #4caf50;
 }
 
 
 .callout {
-    position: relative;
-    z-index: 10;
-    top: 80%;
+  position: relative;
+  z-index: 10;
+  top: 80%;
 }
 
 .brand-logo img{
-    width: 30%;
+  width: 30%;
 }
 
 .card-panel {
-    margin: auto;
-    width: 50%;
+  margin: auto;
+  width: 50%;
 }
    
 
 
 @media (max-width: 812px) and (orientation: landscape), only screen and (max-width: 700px) and (orientation: portrait)
  {
-    .caption{
+  .caption{
     zoom: .7;
- }
+  }
 
  .waves-effect {
     margin-top: 20px;
- }
+  }
 }
 
 @media (max-width: 993px) {
-    .card-panel {
-        margin: auto;
-        width: 90%;
-    } 
+  .card-panel {
+    margin: auto;
+    width: 90%;
+  } 
 }
 
 @media only screen and (max-width: 992px) {
-    nav .brand-logo {
-        left: 50%;
-        webkit-transform: none;
-        transform: none;
-
+  nav .brand-logo {
+    left: 50%;
+    -webkit-transform: none;
+    transform: none;
+  }
 }
