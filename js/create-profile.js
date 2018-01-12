@@ -25,6 +25,12 @@ $(document).ready(function() {
     allowedFileExtensions: ['jpg', 'png', 'gif']
   });
 
+  /* Código para obtener el valor de la imagen de usuario */
+  $('#avatar-1').change(function() {
+    var avatar = (this.files[0].name).toString();
+    localStorage.setItem('img-avatar', avatar);
+  });
+
   /* Código para elegir la fecha de nacimiento*/
 
   $('.datepicker').pickadate({

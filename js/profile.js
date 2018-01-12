@@ -3,6 +3,10 @@ $(document).ready(function() {
   /* Inicializador del botón del menu hamburguesa */
   $('.button-collapse').sideNav();
 
+  /* Obteniendo la imagen del usuario*/
+  var imgAvatar = localStorage.getItem('img-avatar');
+  $('.user').attr('src', '../assets/images/' + imgAvatar);
+
   /* Obteniendo datos del personaje, llenado por el usuario*/
   var inputName = localStorage.getItem('name');
   var inputAge = localStorage.getItem('age');
