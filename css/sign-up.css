@@ -4,7 +4,7 @@ body {
     background-image: url(../assets/images/fondo2.png);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    height: 130vh;
     background-position: center;
 }
 
@@ -23,18 +23,34 @@ body {
 .slider .slides li .caption {
     top: 30%;
 }
-
+/*
 .slider .slides{
     background-color: #5f4a00;
-}
+} 
 
 .slidessize img{
     opacity: 0.6;
+} */
+
+.card-panel {
+    margin-top: 3em !important;
+}
+
+.logo-rolling {
+    width: 20%;
+}
+
+.container-logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .material-icons {
     font-size: 60px;
-    color: #4caf50;
+    color: #f41e34;
 }
 
 
@@ -76,7 +92,7 @@ body {
 @media only screen and (max-width: 992px) {
     nav .brand-logo {
         left: 50%;
-        webkit-transform: none;
+        -webkit-transform: none;
         transform: none;
-
+    }    
 }
