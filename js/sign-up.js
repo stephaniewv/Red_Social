@@ -16,7 +16,10 @@ $(document).ready(function() {
   }
 
   function confirmPassword() {
-    return $('#confirm-password').val().length >= 6 && $('#confirm-password').val() === $('#password').val();
+    if($('#confirm-password').val().length >= 6 && $('#confirm-password').val() === $('#password').val()) {
+      return true
+    }
+    alert('Tus contraseñas no son iguales. Por favor inténtalo nuevamente');
   }
 
   function checkboxValid() {

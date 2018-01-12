@@ -9,6 +9,7 @@
 
 .nav-extended {
     position: absolute;z-index:999999999;
+    margin-top: 2em;
 }
 
 .nav-wrapper {
@@ -22,7 +23,8 @@
 }
 
 .slider .slides{
-    background-color: #5f4a00;
+    background-color: #f41e34;
+    /*#5f4a00*/
 }
 
 .slidessize img{
@@ -31,7 +33,7 @@
 
 .material-icons {
     font-size: 60px;
-    color: #4caf50;
+    color: #f41e34;
 }
 
 
@@ -42,7 +44,7 @@
 }
 
 .brand-logo img{
-    width: 30%;
+    width: 70%;
 }
 
 
@@ -64,8 +66,6 @@
 @media only screen and (max-width: 992px) {
     nav .brand-logo {
         left: 50%;
-        webkit-transform: none;
+        -webkit-transform: none;
         transform: none;
-
 }
-

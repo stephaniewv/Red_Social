@@ -69,7 +69,7 @@
     <div class="col s12 l12">
       <div class="portada parallax-container">
         <div class="user-image col l10">
-          <img src= "../assets/images/perfil.jpg" alt="user" class="circle responsive-img user z-depth-4 animated zoomInRight">
+          <img  alt="user" class="circle responsive-img user z-depth-4 animated zoomInRight">
         </div>
       </div>      
     </div>
@@ -195,35 +195,41 @@
           </div>  
           <div class="row space-up">
             <div class="input-field col s12 col s6 col l8 offset-l2">
-              <select multiple>
+              <select multiple id="theme-select">
                 <option value="" disabled selected>Temática</option>
-                <option value="1">Ciudad</option>
-                <option value="2">Fantasía</option>
-                <option value="3">Paranormal</option>
-                <option value="4">Romance</option>
-                <option value="5">Universitaria</option>
+                <option value="Ciudad">Ciudad</option>
+                <option value="Fantasía">Fantasía</option>
+                <option value="Paranormal">Paranormal</option>
+                <option value="Romance">Romance</option>
+                <option value="Universitaria">Universitaria</option>
+                <option value="Viaje">Viaje</option>
               </select>
               <label>Elige una o más temáticas</label>
             </div>
           </div>
           <div class="row space-up">
-            <div class="input-field col s12 col l6 offset-l2">
-              
+            <div class="input-field col s12 col l6 offset-l2">     
               <p>Selecciona una imagen de portada</p>
-              <input type="file" id="files" name="files[]" class= "input-img">
+              <input type="file" id="files" name="files[]" class= "input-img img-big">
             
             </div>
           </div>
           <div class="row space-up">
             <div class="input-field col s12 col l9 offset-l2">
-              <textarea id="textarea1" class="materialize-textarea"></textarea>
+              <textarea id="textarea-st" class="materialize-textarea"></textarea>
               <label for="textarea1">Empieza a imaginar</label>
             </div>
           </div>
           <div class="row space-up">
+              <div class="input-field col s12 col l9 offset-l2">
+                <textarea id="blockquote-st" class="materialize-textarea"></textarea>
+                <label for="textarea1">Agrega un prólogo (Opcional)</label>
+              </div>
+          </div>
+          <div class="row space-up">
             <div class="input-field col s12 col l6 offset-l2">
               <p>Selecciona una imagen para tu historia</p>
-              <input type="file" id="files" name="files[]" class= "input-img space-down">
+              <input type="file" id="files" name="files[]" class= "input-img space-down img-st">
             </div>
           </div>
            

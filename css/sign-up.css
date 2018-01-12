@@ -1,4 +1,5 @@
 body {
+<<<<<<< HEAD
 display: flex;
 min-height: 100vh;
 flex-direction: column;
@@ -8,6 +9,15 @@ background-repeat: no-repeat;
 background-size: cover;
 height: 100vh;
 background-position: center;
+=======
+
+    vertical-align: middle;
+    background-image: url(../assets/images/fondo2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 130vh;
+    background-position: center;
+>>>>>>> f876acf20c777f7cc15a62a2ab11e2ea11efd64f
 }
 
 /* Navbar */
@@ -25,8 +35,9 @@ background-position: center;
 .slider .slides li .caption {
   top: 30%;
 }
-
+/*
 .slider .slides{
+<<<<<<< HEAD
   background-color: #5f4a00;
 }
 
@@ -37,6 +48,34 @@ background-position: center;
 .material-icons {
   font-size: 60px;
   color: #4caf50;
+=======
+    background-color: #5f4a00;
+} 
+
+.slidessize img{
+    opacity: 0.6;
+} */
+
+.card-panel {
+    margin-top: 3em !important;
+}
+
+.logo-rolling {
+    width: 20%;
+}
+
+.container-logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.material-icons {
+    font-size: 60px;
+    color: #f41e34;
+>>>>>>> f876acf20c777f7cc15a62a2ab11e2ea11efd64f
 }
 
 
@@ -76,9 +115,17 @@ background-position: center;
 }
 
 @media only screen and (max-width: 992px) {
+<<<<<<< HEAD
   nav .brand-logo {
     left: 50%;
     -webkit-transform: none;
     transform: none;
   }
+=======
+    nav .brand-logo {
+        left: 50%;
+        -webkit-transform: none;
+        transform: none;
+    }    
+>>>>>>> f876acf20c777f7cc15a62a2ab11e2ea11efd64f
 }
