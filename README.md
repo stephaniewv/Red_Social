@@ -93,24 +93,43 @@ Brindamos una plataforma responsive que les permite crear perfiles rolplayers. L
 
 ### Flujo de aplicación:
 
-1. Vista Splash: Primera vista donde el usuario es saludado con el logo de nuestra red social.
-![vista splash](assets/images/)
-2. Home: Segunda vista donde se ofrece información sobre nuestro servicio.
-![home movil](assets/images/home_movil.jpg)
-![home desktop](assets/images/home_desktop.jpg)
-3. Sign up: Al hacer click al botón de "Sign up", genera un formulario para generar una cuenta. Se pide el registro a través deñ correp electrónico.
-4. Create profile: Vista donde se llenan los datos del personaje.
+##### 1. Vista Splash: Primera vista donde el usuario es saludado con el logo de nuestra red social.
+![vista splash](assets/images/splash.png)
+
+##### 2. Home: Segunda vista donde se ofrece información sobre nuestro servicio.
+![vista logindesktop](assets/images/home_desktop.png)
+![vista loginmovil](assets/images/home_movil.png)
+
+##### 3. Home:: Al hacer click al botón de "Sign up", genera un formulario para generar una cuenta. Se pide el registro a través del correp electrónico.
+
+![vista singupdesktop](assets/images/signupdesktop.png)
+![vista singupmovil](assets/images/signupmovil.png)
+
+
+##### 4. Log in: Al hacer click al botón "Log in" podrá acceder a su cuenta.
+
+![vista logindesktop](assets/images/desktopmovil.png)
+![vista loginmovil](assets/images/loginmovil.png)
+
+
+##### 5. Create profile: Vista donde se llenan los datos del personaje.
 
 ![create profile desktop](assets/images/createprofile_desktop.png)
-5. Profile: Perfil del personaja creado. Se muestra una imagen de portada y su imagen de perfil. Presenta espacios para generar estados, galerías y starter. Además de una ficha sobre la historia del personaje.
-![profile movil](assets/images/profile_movil.jpg)
-![profile desktop](assets/images/profile_desktop.jpg)
-6. Starter: Al dar click al botón "Crear starter", se muestra la creación de historias con otros personajes. El botón flotante permite al personaje con el que se está jugando, seguir desarrollando la historia.
-![starter movil](assets/images/starter_movil.jpg)
-![starter desktop](assets/images/starter_desktop.jpg)
-7. Inicio: A través del botón del inicio situado en el navbar del perfil, se direccion a una vista con las actualizaciones de sus amigos y también puede acceder a sus otras vidas.
-![inicio movil](assets/images/inicio_movil.jpg)
-![inicio desktop](assets/images/inicio_desktop.jpg)
+![create profile desktop](assets/images/movil_profile.png)
+
+
+
+##### 6. Profile: Perfil del personaja creado. 
+#####Se muestra una imagen de portada y su imagen de perfil. Presenta espacios para generar estados, galerías y starter. Además de una ficha sobre la historia del personaje.
+
+![profile movil](assets/images/profile_movil.png)
+![profile desktop](assets/images/profile_desktop.png)
+##### 7. Starter: Al dar click al botón "Crear starter", se muestra la creación de historias con otros personajes. El botón flotante permite al personaje con el que se está jugando, seguir desarrollando la historia.
+![starter movil](assets/images/starter_movil.png)
+![starter desktop](assets/images/starter_desktop.png)
+##### 8. Inicio: A través del botón del inicio situado en el navbar del perfil, se direcciona una vista con las actualizaciones de sus amigos y también puede acceder a sus otras vidas.
+![create profile desktop](assets/images/movil_profile.png)
+![inicio desktop](assets/images/inicio_desktop.png)
 
 ### Herramientas utilizadas:
 
