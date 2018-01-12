@@ -123,10 +123,13 @@ $(document).ready(function() {
     });
   });
 
-  /* Redireccionando a la vista del starter */
+  /* Redireccionando a la vista del starter 
   $('.btn-new-starter').click(function() {
     window.location.href = '../views/starter.html';
-  });
+  }); */
+
+  $('.modal').modal();
+  $('select').material_select();
 
   $('.web').click(function() {
     window.location.href = '../views/inicio.html';

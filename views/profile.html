@@ -86,7 +86,7 @@
       </div>
       <hr>
       <div class="col l10 offset-s2 offset-l2 offset-m4">
-        <a class="waves-effect waves-light btn btn-new-starter"><i class="material-icons left">create</i>Crea tu Starters</a>
+        <a class= "waves-effect waves-light btn modal-trigger btn-new-starter" href="#modal-starter"><i class="material-icons left">create</i>Crea un Starter</a>
       </div>    
       <div class="col s12 container-display btn-img">      
         <div class="col s6"> 
@@ -175,6 +175,74 @@
       </div>
     </div> 
   </div>    
+
+  <!-- Modal del botón crear starter -->
+
+  <!-- Modal Structure -->
+  <div id="modal-starter" class="modal">
+    <div class="modal-content">
+      <div class="container-mod-title">
+      <h4 class="center-align">¡Crea una historia!</h4>
+      <p class="center-align space">Recuerda que tú pones los límites</p>
+    </div>
+      <div class="row">
+        <form class="col s12 col l12">
+          <div class="row space-up">
+            <div class="input-field col s12 col s6 col l8 offset-l2">
+              <input placeholder="" id="title" type="text" class="validate">
+              <label for="title">Título del starter</label>
+            </div>
+          </div>  
+          <div class="row space-up">
+            <div class="input-field col s12 col s6 col l8 offset-l2">
+              <select multiple>
+                <option value="" disabled selected>Temática</option>
+                <option value="1">Ciudad</option>
+                <option value="2">Fantasía</option>
+                <option value="3">Paranormal</option>
+                <option value="4">Romance</option>
+                <option value="5">Universitaria</option>
+              </select>
+              <label>Elige una o más temáticas</label>
+            </div>
+          </div>
+          <div class="row space-up">
+            <div class="input-field col s12 col l6 offset-l2">
+              
+              <p>Selecciona una imagen de portada</p>
+              <input type="file" id="files" name="files[]" class= "input-img">
+            
+            </div>
+          </div>
+          <div class="row space-up">
+            <div class="input-field col s12 col l9 offset-l2">
+              <textarea id="textarea1" class="materialize-textarea"></textarea>
+              <label for="textarea1">Empieza a imaginar</label>
+            </div>
+          </div>
+          <div class="row space-up">
+            <div class="input-field col s12 col l6 offset-l2">
+              <p>Selecciona una imagen para tu historia</p>
+              <input type="file" id="files" name="files[]" class= "input-img space-down">
+            </div>
+          </div>
+           
+        </form>
+        <div class="row">
+            <div class="col s12 col l5 offset-l5 space-up">
+                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">¡Crear!</a>
+
+            </div>
+
+          </div> 
+       
+      </div>
+    </div>
+  </div>
+  
+  <!-- Modal Trigger 
+  <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a> -->
+  
           
   <script src="../vendors/js/jquery-3.2.1.min.js"></script>
   <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>

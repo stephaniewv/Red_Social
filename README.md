@@ -15,6 +15,10 @@ Antes de seguir con la documentación, es importante conocer la siguiente defini
 
 ## User Research
 
+### Planificación:
+
+
+
 ### Identificando la Problemática:
 
 En una rápida investigación, se pudo observar que tan solo en Lima Matropolitana existe alrededor de **1536 usuarios** identificados como Rolplayers Peruanos.
@@ -90,12 +94,23 @@ Brindamos una plataforma responsive que les permite crear perfiles rolplayers. L
 ### Flujo de aplicación:
 
 1. Vista Splash: Primera vista donde el usuario es saludado con el logo de nuestra red social.
+![vista splash](assets/images/)
 2. Home: Segunda vista donde se ofrece información sobre nuestro servicio.
+![home movil](assets/images/home_movil.jpg)
+![home desktop](assets/images/home_desktop.jpg)
 3. Sign up: Al hacer click al botón de "Sign up", genera un formulario para generar una cuenta. Se pide el registro a través deñ correp electrónico.
 4. Create profile: Vista donde se llenan los datos del personaje.
+
+![create profile desktop](assets/images/createprofile_desktop.png)
 5. Profile: Perfil del personaja creado. Se muestra una imagen de portada y su imagen de perfil. Presenta espacios para generar estados, galerías y starter. Además de una ficha sobre la historia del personaje.
+![profile movil](assets/images/profile_movil.jpg)
+![profile desktop](assets/images/profile_desktop.jpg)
 6. Starter: Al dar click al botón "Crear starter", se muestra la creación de historias con otros personajes. El botón flotante permite al personaje con el que se está jugando, seguir desarrollando la historia.
+![starter movil](assets/images/starter_movil.jpg)
+![starter desktop](assets/images/starter_desktop.jpg)
 7. Inicio: A través del botón del inicio situado en el navbar del perfil, se direccion a una vista con las actualizaciones de sus amigos y también puede acceder a sus otras vidas.
+![inicio movil](assets/images/inicio_movil.jpg)
+![inicio desktop](assets/images/inicio_desktop.jpg)
 
 ### Herramientas utilizadas:
 

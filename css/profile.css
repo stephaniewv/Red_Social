@@ -4,6 +4,14 @@
     padding: 0;
 }
 
+/* Clase general */
+.space-up{
+    margin-top: 1.5em;
+}
+
+.space-down {
+    margin-bottom: 1.5em;
+}
 /* Navbar */
 
 nav {
@@ -159,11 +167,53 @@ hr {
     right: -0.95px !important;
 } 
 
+/* Estilo del modal de crear starter */
 
+.modal {
+    width: 40%;
+}
+
+.container-mod-title {
+    background-color: #fa1e34;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 1em;
+    color: #fff;
+}
+
+form {
+    border: 3px solid #fa1e34;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px; 
+}
+
+.input-img {
+    background-color: #fadf44;
+    padding: 1em 2em;
+    border-radius: 5px;
+}
+
+.modal-close {
+    background-color: #fa1e34;;
+    border-radius: 10px;
+    color: #fadf44
+}
 
 @media only screen and (max-width: 992px){  
     nav .brand-logo {
      -webkit-transform: none; 
     transform:none; 
     }
+}
+
+@media (max-width:600px) {
+    .modal {
+        width: 90%;
+    }
+
+    .input-img {
+        width: 60%;
+        margin-left: 4em;
+    }
+    
 }
