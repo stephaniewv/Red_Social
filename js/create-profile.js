@@ -41,7 +41,7 @@ $(document).ready(function() {
     close: 'Ok',
     closeOnSelect: false // Close upon selecting a date,
   });
-        
+   
       
   /* Código para enviar a la siguiente vista*/
   $('.btn-start').on('click', function() {

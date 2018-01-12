@@ -15,6 +15,7 @@ $(document).ready(function() {
   $('.history-name').html(inputName);
   $('.history-age').html(inputAge);
 
+
   /* Activando del textarea de Materialize */
   $('#textarea1').trigger('autoresize');
  
