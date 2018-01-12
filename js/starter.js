@@ -27,6 +27,27 @@ $(document).ready(function() {
     }
   });
 
+  /* Funcionalidad para obtner los datos llenados previamente en el fomulario */
+  var inputTitle = localStorage.getItem('title-starter');
+  $('.header').html(inputTitle);
+
+  var selectTheme = localStorage.getItem('theme-starter');
+  $('.theme-starter').html('Temática: ' + selectTheme);
+
+  var textSt = localStorage.getItem('text-st');
+  $('.plot').html(textSt);
+
+  var blockquoteText = localStorage.getItem('blockquote');
+  $('.blockquote-st').html(blockquoteText);
+
+  var imgOne = localStorage.getItem('img-big-starter');
+  $('.img-o').attr('src', imgOne);
+
+  var imgTwo = localStorage.getItem('img-st');
+  $('.img-st2').attr('src', imgTwo);
+
+  /* Fin de la funcionalidad para los datos del usuario/*
+
   /* Activando del textarea de Materialize */
   $('#textarea1').trigger('autoresize');
 
