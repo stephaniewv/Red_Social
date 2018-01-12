@@ -31,7 +31,11 @@ La comunidad esta en crecimiento y "rolean" principalmente en Facebook y es ahí
 
 ### Análisis de la Competencia
 
-Un grupo en facebook llamada Roleados, ha creado una primera página web para cubrir las necesidades de esta comunidad. Sin embargo, aún tienen varias deficiencias como por ejemplo en la creación de usuarios.
+**Roleados**
+
+Fue lanzada al mercado, mediante una promoción en Facebook el 3 de enero del 2017.
+
+ Una read social, que ha creado una primera página web para cubrir las necesidades de esta comunidad. Sin embargo, aún tienen varias deficiencias como por ejemplo en la creación de usuarios. Y aún no ha logrado atraer a la gran cantidad de usuarios rolplayer. Además aún no cuentan con una aplicación para mobile.
 
 ![competencia](assets/images/roleados.png)
 
@@ -39,15 +43,31 @@ Comentarios de usuarios de la página Roleados.
 
 ![competencia](assets/images/comentarios.png)
 
+**VK**
+
+Es tildada como "Facebook rusa", debido a su estructura similar.
+
+VK se fundó en 2006, dos años después que Facebook, y su creador fue el joven Pavel Durov, también cofundador de Telegram. Durov abandonó la compañía en 2014 tras, según se señala, ser apartado del equipo en el que era CEO por denegar una petición del gobierno ruso de compartir datos de sus usuarios.
+
+A pesar de su gran popularidad en Rusia, tiene comentarios negativos por su funcionalidad.
+
+
 ## Research: Entendiendo las necesidades del usuario
 
-Para crear nuestra red social se ha realizado entrevistas de uno a uno y encuestas (vía **SurveyMonkey**) para conocer las necesidades del usuario y así ofrecerles una mejor experiencia.
+Para crear nuestra red social se ha realizado entrevistas de uno a uno y encuestas (vía **Google drive**) para conocer las necesidades del usuario y así ofrecerles una mejor experiencia.
 
-Encuesta: https://es.surveymonkey.com/r/9RHQKRN
+**Encuesta**
+https://docs.google.com/forms/d/1pCfJyXkExKflLrU_cBmC0HnUtxJnc3Tpmwlsn1V5sFo/edit?usp=drive_web
 
-Resultados de la encuesta:
+**Resultados de la encuesta**
+https://docs.google.com/spreadsheets/d/15LwXZlGyGThu5hBZqCm-4o6AzfmyfRzYdAk4eL1WDPI/edit?usp=forms_web_b#gid=516445345
 
-**POR INTEGRAR**
+**Resultados de la encuesta**
+
+- Los usuarios están activos en su cuenta de rol, entre 4 y 7 horas al día.
+- El 100% de los encuestados, al menos una vez, han perdido una cuenta por Facebook.
+- Los usuarios siguen temáticas dentro y fuera de comunidades.
+- Los usuarios generan lazos amicales y románticos entre sus personajes.
 
 ## Arquetipo del usuario:
 
