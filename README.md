@@ -42,6 +42,10 @@ Fue lanzada al mercado, mediante una promoción en Facebook el 3 de enero del 20
 Comentarios de usuarios de la página Roleados.
 
 ![competencia](assets/images/comentarios.png)
+![competencia](assets/competencia/blog.png)
+![competencia](assets/competencia/error1.png)
+![competencia](assets/competencia/error2.png)
+
 
 **VK**
 
