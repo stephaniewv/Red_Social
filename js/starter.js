@@ -40,8 +40,9 @@ $(document).ready(function() {
   var blockquoteText = localStorage.getItem('blockquote');
   $('.blockquote-st').html(blockquoteText);
 
-  var imgOne = localStorage.getItem('img-big-starter');
-  $('.img-o').attr('src', imgOne);
+  
+  var imgOne = localStorage.getItem('imgData');
+  $('.img-o').attr('src', imgOne); 
 
   var imgTwo = localStorage.getItem('img-st');
   $('.img-st2').attr('src', imgTwo);

@@ -145,7 +145,21 @@ $(document).ready(function() {
     localStorage.setItem('theme-starter', starterTheme);
   });
 
- 
+
+  /*
+  $('.img-big').change(function(){
+    debugger
+      // Creamos la Imagen
+     // var img = $('<img>');
+      // Asignamos el atributo source , haciendo uso del método createObjectURL
+      var imagen =  URL.createObjectURL(this.files);
+      // Añadimos al Div
+      localStorage.setItem('img-big-starter', imagen);
+      console.log(imagen);
+    
+  }); 
+
+  /*
   $('.img-big').change(function() {
     var imgBig = (this.files[0].name).toString();
     console.log(imgBig);
@@ -153,9 +167,12 @@ $(document).ready(function() {
   }); 
 
   $('.img-st').change(function() {
-    var imgSt = (this.files[0].name).toString();
-    localStorage.setItem('img-st', '../assets/images/starter/' + imgSt);
-  });
+    if(this.files && this.files[0]) {
+      var imgSt = URL.createObjectURL(this.files[0]);
+     console.log(imgSt);
+    }
+    
+  }); */
 
   $('#textarea-st').keyup(function() {
     var textStarter = $('#textarea-st').val();
