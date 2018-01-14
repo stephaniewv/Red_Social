@@ -66,32 +66,35 @@
   </div>
   <div class="row">
     <div class="col s12 l12">
-      <div class="portada parallax-container">
-        <div class="user-image col l10">
-          <img  alt="user" class="circle responsive-img user z-depth-4 animated zoomInRight">
+      <div class="portada">
+        <div class="user-img-div col l10 col s8 offset-s2">
+          <img  alt="user" class="responsive-img user z-depth-4 animated zoomInRight">
         </div>
       </div>      
     </div>
   </div>
   <div class="row">
-    <div class="col s12 m12 l3 parallax user-details">
+    <div class="col s12 m12 l3 user-details">
       <h3 id="pg-name" class="center-align"></h3> 
-      <div class="card">
+      <div class="card col s11">
         <div class="card-content">
           <p class="card-title center-align">Pensamiento del día</p>
           <textarea id="textarea1" class="materialize-textarea"></textarea>
           <label for="textarea1"></label>
         </div>
       </div>
-      <hr>
+      <div class="col s11">
+        <hr>
+      </div>
+      
       <div class="col l10 offset-s2 offset-l2 offset-m4">
-        <a class= "waves-effect waves-light btn modal-trigger btn-new-starter" href="#modal-starter"><i class="material-icons left">create</i>Crea un Starter</a>
+        <a class= "waves-effect waves-light btn modal-trigger btn-new-starter border-radius" href="#modal-starter"><i class="material-icons left">create</i>Crea un Starter</a>
       </div>    
-      <div class="col s12 container-display btn-img">      
-        <div class="col s6"> 
+      <div class="col l12 col s12 container-display btn-img">      
+        <div class="col l4 col s4 offset-s1"> 
           <span class="title-img btn-gal">Galería</span>
         </div>
-        <div class="col s6"> 
+        <div class="col l4 offset-l2 col s4 offset-s1"> 
           <span class="title-img btn-st">Starters</span>
         </div>  
       </div>
@@ -112,24 +115,22 @@
           <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add_a_photo</i></a>
           <textarea id="textarea-post" class="materialize-textarea grey-text text-darken-4" placeholder="¿Qué vas a crear hoy?"></textarea>
           <label for="textarea-post"></label>
-          <button class="btn waves-effect waves-light btn-post disabled" type="button" name="action" >Crear
+          <button class="btn waves-effect waves-light btn-post" type="button" name="action" disabled>Crear
             <i class="material-icons right">border_color</i>
           </button>
         </div>           
       </div>
     </div>
     <div class="col m12 l3 history">
-      <h3 class="center-align">Mi historia</h3>
-      <p class="center-align">『Nombre Completo』</p>
-      <p class="center-align history-name"></p>
-      <p class="center-align">『Apodo』</p>
-      <p class="center-align">Ren</p>
-      <p class="center-align">『Edad』 </p>
+      <h3 class="center-align text-pink border-radius">Mi historia</h3>
+      <h5 class="center-align">『Nombre Completo』</h5>
+      <p class="center-align history-name text-post"></p>
+      <h5 class="center-align">『Edad』 </h5>
       <p class="center-align history-age"></p>
-      <p class="center-align">『Genero』</p>
-      <p class="center-align genero"></p>
-      <p class="center-align">  • ───────── • </p>
-      <p class="center-align">『Características físicas』</p>
+      <h5 class="center-align">『Genero』</h5>
+      <p class="center-align gender-text"></p>
+      <p class="center-align space-up">  • ───────── • </p>
+      <h5 class="center-align space-up">『Características físicas』</h5>
       <ul class="center-align">
         <li>Tez blanca</li>
         <li> Ojos marrones</li>
@@ -138,7 +139,7 @@
         <li>1.85 m de estatura</li>
       </ul >
       <p class="center-align">  • ───────── • </p>
-      <p class="center-align">『Características personales』</p>
+      <h5 class="center-align space-up">『Características personales』</h5>
       <ul class="center-align">
         <li>Disfruta de la literatura fantástica y la ciencia ficción</li>
         <li>Curioso y un poco ingenuo</li>
@@ -170,7 +171,7 @@
             <p class="situacion"></p>
             <p class="tematica center-align"></p>
           </div>
-          <i class="material-icons add-friend z-depth-3">favorite</i>
+          <i class="material-icons add-friend">favorite</i>
         </div>
       </div>
     </div> 

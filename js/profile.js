@@ -1,5 +1,4 @@
 $(document).ready(function() {
-
   /* Inicializador del botón del menu hamburguesa */
   $('.button-collapse').sideNav();
 
@@ -12,9 +11,11 @@ $(document).ready(function() {
   /* Para obetener los datos del formulario del personaje */
   var nameCharacter = JSON.parse(localStorage.getItem('name_pg'));
   var ageCharacter = JSON.parse(localStorage.getItem('age_pg'));
+  var pgGenter = JSON.parse(localStorage.getItem('pg_gender'));
   $('#pg-name').html(nameCharacter);
   $('.history-name').html(nameCharacter);
   $('.history-age').html(ageCharacter);
+  $('gender-text').html(pgGenter);
 
 
   /* Activando del textarea de Materialize */
@@ -60,7 +61,7 @@ $(document).ready(function() {
   
 
   $(textArea).keypress(function(event) {
-    btn.removeClass('disabled');
+    btn.prop('disabled', false);
     var text = textArea.val();
     console.log(text); 
   });
@@ -85,52 +86,43 @@ $(document).ready(function() {
     });
 
 
-    /*
-    var buttons = $('<div class="fixed-action-btn"></div>')
-    var anchor = $('<a class= "btn-floating btn-large red ><i class= "large material-icons" >mode_edit</i></a>');
-    var list = $('<ul/>');
-    var items = $('<li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>');
-    var item1 = $('<li><a class="btn-floating yellow darken-1"><i class="material-icons">grade</i></a></li>'); */
-
     timeContainer.addClass('text-post');
     timeContainer.append(timeContent);  
     box.append(parrafo, timeContainer);
     postBox.append(box);
     $('.card-container').append(postBox);
     console.log(textArea.val());
-    textArea.val(''); 
+    $(btn).prop('disabled', true); 
+    textArea.val('');
   });
 
-  $.each(friends, function(key, value) {
-    /*  nombres de los personajes */
-    var character = key;
-    // console.log(restaurant); 
+  /* Funcionalidad para las solicitudes de amistad */
 
-    //  los valores de cada key(personaje) 
-    var content = value;
-    // console.log(content);
-
-    // contenido de la tematica. 
-    var thematic = content.tematica;
-    // console.log(location);
-
-    var ageCharacter = content.edad;
-    var relationship = content.situacion;
-
-    var imagenes = content.profile;
-
-    $('#menu').click(function() {
-      $('.tap-target').tapTarget('open');
-      $('.friend').attr('src', '../assets/images/friends/' + imagenes);
-      $('.friend').addClass('responsive-img circle');
-      $('.nombre').text(character);
-      $('.edad').text(ageCharacter);
-      $('.situacion').text(relationship);
-      $('.tematica').text('Temática: ' + thematic);
-    });
+  $('#menu').click(function() {
+    $('.tap-target').tapTarget('open');
+    $('.tap-target-origin', 'tap-target-wave').addClass('hide');    
+    $('.friend').addClass('responsive-img circle');
+    $('.nombre').text(friends[Math.floor(Math.random() * 4)]);
+    $('.edad').text(edad[Math.floor(Math.random() * 4)] + ' años');
+    $('.situacion').text(relación[Math.floor(Math.random() * 4)]);
+    $('.tematica').text('Temática: ' + theme[Math.floor(Math.random() * 4)]);
+    $('.friend').attr('src', '../assets/images/friends/' + profile[Math.floor(Math.random() * profile.length)]);
   });
 
+  /* Funcionalidad para que el botón de sugerencia de amistad pulse cada 10 segundos */
+
+  function pulse() {
+    $('#menu').addClass('pulse');
+  }
+  setInterval(pulse, 10000);
   
+  function pulseNo() {
+    $('#menu').removeClass('pulse');
+  }
+  setInterval(pulseNo, 18000);
+  
+
+  /* Activando el modal */
 
   $('.modal').modal();
   $('select').material_select();
@@ -184,7 +176,7 @@ $(document).ready(function() {
   $('#blockquote-st').keyup(function() {
     var blockquote = $('#blockquote-st').val();
     localStorage.setItem('blockquote', blockquote);
-  })
+  });
 
   $('.img-st').keypress(function() {
     var imgSt = $('.img-st').val();
@@ -192,7 +184,7 @@ $(document).ready(function() {
   });
 
 
-/* Redireccionando a la vista del starter */
+  /* Redireccionando a la vista del starter */
   $('.modal-close').click(function() {
     window.location.href = '../views/starter.html';
   }); 
