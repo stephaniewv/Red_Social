@@ -6,7 +6,7 @@ body {
     background-image: url(../assets/images/fondo2.png);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    height: 120vh;
     background-position: center;
   }
 
@@ -28,9 +28,6 @@ body {
     cursor: pointer;
 }
 
-  .form-container {
-    border-radius: 10px;
-  }
 
   .input-field input[type=date]:focus + label,
   .input-field input[type=text]:focus + label,
@@ -45,5 +42,16 @@ body {
   .input-field input[type=password]:focus {
     border-bottom: 2px solid #e91e63;
     box-shadow: none;
+  }
+
+  @media only screen and (min-width: 992px){
+    
+    .form-container {
+        border-radius: 20px;
+    }
+  
+    body {
+      height: 100vh;
+    }
   }
 
