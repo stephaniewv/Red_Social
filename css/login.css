@@ -10,10 +10,22 @@ body {
     background-position: center;
   }
 
+  /* Clase general para los bordes de los botones */
+  .border-radius {
+    border-radius: 10px;
+  }
+
   main {
     flex: 1 0 auto;
   }
 
+  .text {
+    color: #fff;
+  }
+
+  .form-container {
+    border-radius: 10px;
+  }
 
   .input-field input[type=date]:focus + label,
   .input-field input[type=text]:focus + label,
@@ -29,3 +41,11 @@ body {
     border-bottom: 2px solid #e91e63;
     box-shadow: none;
   }
+
+
+  @media only screen and (min-width: 992px){
+    
+    .form-container {
+        border-radius: 20px;
+    }
+}
