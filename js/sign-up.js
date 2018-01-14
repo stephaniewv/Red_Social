@@ -77,5 +77,4 @@ $(document).ready(function() {
   $('.logo-rolling').on('click', function() {
     $(location).attr('href', 'home.html');
   });
-
 });

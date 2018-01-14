@@ -23,6 +23,11 @@ body {
     color: #fff;
   }
 
+  .logo-rolling {
+    width: 30%;
+    cursor: pointer;
+}
+
   .form-container {
     border-radius: 10px;
   }
@@ -42,10 +47,3 @@ body {
     box-shadow: none;
   }
 
-
-  @media only screen and (min-width: 992px){
-    
-    .form-container {
-        border-radius: 20px;
-    }
-}

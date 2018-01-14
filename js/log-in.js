@@ -27,8 +27,12 @@ $(document).ready(function() {
   });
 
   /* Enviando a la vista perfil del usuario que ya esta resgistrado*/
-
   $('.btn-log-in').click(function() {
     window.location.href = '../views/profile.html';
   }); 
+
+  /* Enviando a la vista home */
+  $('.logo-rolling').on('click', function() {
+    $(location).attr('href', 'home.html');
+  });
 });
