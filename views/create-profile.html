@@ -5,62 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../vendors/materialize/css/materialize.min.css">
-    <link href="../vendors/bootstrap-fileinput-master/css/fileinput.css" media="all" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="../css/create-profile.css">
     <title>Crear perfil</title>
 </head>
 <body>
 
-  <!-- Navbar -->
+  <!-- Navbar 
     <nav class="nav-extended transparent z-depth-0">
-        <div class="nav-wrapper">
-            <div class="imglogo">
-                <a href="#" class="brand-logo">
-                    <img src="../assets/logotipo/logowhite.png">
-                </a>
-            </div>
-
+      <div class="nav-wrapper">
+        <div class="imglogo">
+          <a href="#" class="brand-logo">
+            <img src="../assets/logotipo/logowhite.png">
+          </a>
         </div>
-    </nav>
+      </div>
+    </nav> -->
 
     <!-- Fin Navbar -->
 
-
-  <div class="container card-panel">
-    
+  <div class="container card-panel">  
     <div class="row">
       <div class="col s10 offset-s1 col l12">
-        <h1 class="flow-text center-align"><strong>Empieza a crear tu mundo</strong></h1>
+        <h2 class="center-align">Empieza a crear tu mundo</h2>
         <h5 class="flow-text center-align">Crea los datos personales de tu personaje</h5>
         <br>
       </div>
     </div>
     
     <div class="row">
-      <div class="col s12 m4 l4">
-          <div class="row">
-              <div class="col s12 col m12 col l12">
-                <img src="../assets/logotipo/logo.png" alt="rolling" class="logo-rolling">
-              </div>
-            </div>  
-        <div class="kv-avatar-hint">
-          <h6 class="flow-text center-align">Selecciona una imagen de máximo 5MB</h6>
-        </div> 
-        <form class="form form-vertical center-align" action="/avatar_upload.php" method="post" enctype="multipart/form-data">
-          <div class="row">
-            <div class="col-sm-4 text-center">
-              <div class="kv-avatar">
-                <div class="file-loading">
-                  <input id="avatar-1" name="avatar-1" type="file" required>
-                </div>
-              </div> 
-            </div>
+      <div class="col s12 m4 l4 container-pg">
+        <!-- Logotipo -->
+        <div class="row">
+          <div class="col s12 col m12 col l12">
+            <img src="../assets/logotipo/logo.png" alt="rolling" class="logo-rolling">
           </div>
-        </form>    
+        </div>
+        <!--Estructura para subir imagen -->  
+        <div class="">
+          <h6 class="flow-text center-align">Selecciona una imagen de máximo 5MB</h6>
+        </div>
+        <div class="card preview valign-wrapper">
+          <a href="#" id="file-select" class="btn">Elige una foto</a>    
+          <img>
+        </div>
+        <div>
+          <span id="file-info" class="center-align">Aún no haz seleccionado una foto</span>
+         </div>
+         <input type="file" name="file" id="file">
       </div>
+      <!-- Formulario -->
       <div class="col s12 l8"> 
-
         <div class="row">
           <form class="col s12 col l12" action="" method="post">
             <div class="row">
@@ -81,7 +76,7 @@
               <div class="input-field col s8 offset-s2">
                 <i class="material-icons prefix">event</i>
                 <label for="icon_prefix"></label>
-                <input type="text" class="datepicker" placeholder="Fecha de nacimiento">
+                <input type="text" class="datepicker date-birth" placeholder="Fecha de nacimiento">
               </div>
             </div>
             <div class="row">
@@ -137,8 +132,8 @@
               </div>
             </div>
             <div class="row">
-              <div class="col s5 offset-s4">
-                <button class="btn waves-effect waves-light btn-start" type="button" name="action">¡Empezar!</button>
+              <div class="col l5 offset-l5 col s5 offset-s4">
+                <button class="btn waves-effect waves-light btn-start" type="button" name="action" disabled>¡Empezar!</button>
               </div>
             </div>
           </form> 
@@ -150,7 +145,6 @@
   <script src="../vendors/js/jquery-3.2.1.min.js"></script>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   <script src="../vendors/materialize/js/materialize.min.js"></script>
-  <script src="../vendors/bootstrap-fileinput-master/js/fileinput.min.js" type="text/javascript"></script>
   <script src="../js/create-profile.js"></script>  
 </body>
 </html>

@@ -3,23 +3,25 @@ $(document).ready(function() {
   /* Inicializador del botón del menu hamburguesa */
   $('.button-collapse').sideNav();
 
-  /* Obteniendo la imagen del usuario*/
+  /* Obteniendo la imagen del personaje*/
   var imgAvatar = localStorage.getItem('img-avatar');
-  $('.user').attr('src', '../assets/images/' + imgAvatar);
+  $('.user').attr('src', '../assets/images/friends/' + imgAvatar);
+  console.log(imgAvatar);
 
-  /* Obteniendo datos del personaje, llenado por el usuario*/
-  var inputName = localStorage.getItem('name');
-  var inputAge = localStorage.getItem('age');
-  /* Para obetener el nombre puesto en el form del personaje */
-  $('#pg-name').html(inputName);
-  $('.history-name').html(inputName);
-  $('.history-age').html(inputAge);
+  
+  /* Para obetener los datos del formulario del personaje */
+  var nameCharacter = JSON.parse(localStorage.getItem('name_pg'));
+  var ageCharacter = JSON.parse(localStorage.getItem('age_pg'));
+  $('#pg-name').html(nameCharacter);
+  $('.history-name').html(nameCharacter);
+  $('.history-age').html(ageCharacter);
 
 
   /* Activando del textarea de Materialize */
   $('#textarea1').trigger('autoresize');
  
 
+  /* Secci+on gallería */
   var imagesGallery = imgGallery; // el array de la galería
   var imagesStarter = imgStarter; // el array del starter
  

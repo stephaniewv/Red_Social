@@ -1,30 +1,40 @@
 $(document).ready(function() {
   $('select').material_select();
- 
 
-  /* Código del plugin para que se muestre el efecto de cargo de imagen */        
-  var btnCust = '<button type="button" class="btn btn-secondary" title="Add picture tags" ' + 
-        'onclick="alert(\'Call your custom code here.\')">' +
-        '<i class="glyphicon glyphicon-tag"></i>' +
-        '</button>'; 
-
-  $('#avatar-1').fileinput({
-    overwriteInitial: true,
-    maxFileSize: 5000,
-    showClose: false,
-    showCaption: false,
-    browseLabel: '',
-    removeLabel: '',
-    browseIcon: '<i class="material-icons">add</i>',
-    removeIcon: '<i class="material-icons">delete</i>',
-    removeTitle: 'Cancel or reset changes',
-    elErrorContainer: '#kv-avatar-errors-1',
-    msgErrorClass: 'alert alert-block alert-danger',
-    defaultPreviewContent: '<img src="/uploads/default_avatar_male.jpg" alt="Your Avatar">',
-    layoutTemplates: {main2: '{preview} ' + btnCust + ' {remove} {browse}'},
-    allowedFileExtensions: ['jpg', 'png', 'gif']
+  /* Sección de creación de imagen seleccionada */
+  $('#file-select').click(function() {
+    event.preventDefault();
+    $('#file').click();
   });
 
+  $('#file').change(function() {
+    var nameFile = (this.files[0].name).toString();
+    var reader = new FileReader();
+    $('#file-info').text('');
+    $('#file-info').text(nameFile);
+
+    reader.onload = function(e) {
+      $('.preview  img').attr('src', e.target.result);
+    };
+
+    
+    reader.readAsDataURL(this.files[0]);
+    $('#file-select').addClass('hide');
+    /* Añadiendo el botón de eliminar imagen */
+    var imgDelate = $('<button class = "btn col l6 offset-l3 btn-delate-img red"></button');
+    imgDelate.text('Eliminar');
+    $('.container-pg').append(imgDelate);
+
+    /* Funcionalidad del botón eliminar */
+    imgDelate.click(function() {
+      $('.preview  img').removeAttr('src');
+      $('.btn-delate-img').addClass('hide');
+      $('#file-select').toggleClass('hide');
+      $('#file-info').text('Aún no haz seleccionado una foto');
+    })
+  });
+
+  
   /* Código para obtener el valor de la imagen de usuario */
   $('#avatar-1').change(function() {
     var avatar = (this.files[0].name).toString();
@@ -41,16 +51,82 @@ $(document).ready(function() {
     close: 'Ok',
     closeOnSelect: false // Close upon selecting a date,
   });
+
+  /* Validación del formulario de la creación del personaje*/
+  var pgName = [],
+    pgAge = [],
+    pgDateBirdth = [],
+    pgGenero = [],
+    pgCountry = [],
+    pgRelationship = [],
+    pgTheme = [];
+
+  $('.btn-start').click(function() {
+    var pgNameVal = $('.pg-name').val();
+    pgAgeVal = $('.pg-age').val();
+    pgDateBirdthVal = $('.date-birth').val();
+    pgGeneroVal = $('.genero').val();
+    pgCountryVal = $('.country').val();
+    pgRelationshipVal = $('.relationship').val();
+    pgThemeVal = $('.thematic').val();
+
+    pgName.push(pgNameVal);
+    pgDateBirdth.push(pgAgeVal);
+    pgGenero.push(pgGeneroVal);
+    pgCountry.push(pgCountryVal);
+    pgTheme.push(pgThemeVal);
+
+    localStorage.setItem('name_pg', JSON.stringify(pgName));
+    localStorage.setItem('age_pg', JSON.stringify(pgAge));    
+    localStorage.setItem('pg_date_birth', JSON.stringify(pgDateBirdth));
+    localStorage.setItem('pg_genero', JSON.stringify(pgCountry));
+    localStorage.setItem('pg_country', JSON.stringify(pgRelationship));
+    localStorage.setItem('pg_them', JSON.stringify(pgTheme));
+  });    
    
-      
+
+  /* Validando el formulario de registro del personaje */
+
+  function nameCharacterValid() {
+    return $('.pg-name').val().length >= 2;
+  }
+
+  function ageCharacterValid() {
+    return $('.pg-age').val();
+  }
+
+  function dateBirthCharacterValid() {
+    return $('.date-birth').val();
+  }
+
+  function generoCharacterValid() {
+    return $('.ganero').val();
+  }
+
+  function countryCharacterValid() {
+    return $('.country').val();
+  }
+
+  function relationshipCharacterValid() {
+    return $('.relationship').val();
+  }
+
+  function themeCharacterValid() {
+    return $('.thematic').val();
+  }
+
+  function allOk() {
+    return nameCharacterValid() && ageCharacterValid() && dateBirthCharacterValid() && generoCharacterValid() && countryCharacterValid() && relationshipCharacterValid() && themeCharacterValid();
+  }
+
+  /* Si ambos campos son correctos, se habilita el botón */
+  $('.thematic').change(function allOk() {
+    $('.btn-start').prop('disabled', false);
+  });
+
   /* Código para enviar a la siguiente vista*/
   $('.btn-start').on('click', function() {
     window.location.href = 'profile.html';
-    var nameUser = $('.pg-name').val();
-    localStorage.setItem('name', nameUser);
-    var agePg = $('.pg-age').val();
-    localStorage.setItem('age', agePg);
-    console.log(nameUser);
   }); 
 });
 

@@ -16,8 +16,8 @@ $(document).ready(function() {
   }
 
   function confirmPassword() {
-    if($('#confirm-password').val().length >= 6 && $('#confirm-password').val() === $('#password').val()) {
-      return true
+    if ($('#confirm-password').val().length >= 6 && $('#confirm-password').val() === $('#password').val()) {
+      return true;
     }
     alert('Tus contraseñas no son iguales. Por favor inténtalo nuevamente');
   }
@@ -41,38 +41,34 @@ $(document).ready(function() {
   /* Guardando los campos en el local storage */
 
   var name = [],
-      lastName = [],
-      email = [],
-      password = [],
-      equalPassword = [];
+    lastName = [],
+    email = [],
+    password = [],
+    equalPassword = [];
   
-  $('.btn-sign-up').click(function () {
+  $('.btn-sign-up').click(function() {
     var nameVal = $('#first_name').val();
-        lastNameVal = $('#last_name').val();
-        emailVal = $('#email').val();
-        passwordVal = $('#password').val();
-        confirmPasswordVal = $('#confirm-password').val();
+    lastNameVal = $('#last_name').val();
+    emailVal = $('#email').val();
+    passwordVal = $('#password').val();
+    confirmPasswordVal = $('#confirm-password').val();
 
-        name.push(nameVal);
-        lastName.push(lastNameVal);
-        email.push(emailVal);
-        password.push(passwordVal);
-        equalPassword.push(confirmPasswordVal);
+    name.push(nameVal);
+    lastName.push(lastNameVal);
+    email.push(emailVal);
+    password.push(passwordVal);
+    equalPassword.push(confirmPasswordVal);
 
-        localStorage.setItem('name_new_user', JSON.stringify(name));
-        localStorage.setItem('last_name_new_user', JSON.stringify(lastName));
-        localStorage.setItem('email_new_user', JSON.stringify(email));
-        localStorage.setItem('password_new_user', JSON.stringify(password));
-        localStorage.setItem('confirm_password_new_user', JSON.stringify(equalPassword));
-  })    
+    localStorage.setItem('name_new_user', JSON.stringify(name));
+    localStorage.setItem('last_name_new_user', JSON.stringify(lastName));
+    localStorage.setItem('email_new_user', JSON.stringify(email));
+    localStorage.setItem('password_new_user', JSON.stringify(password));
+    localStorage.setItem('confirm_password_new_user', JSON.stringify(equalPassword));
+  });    
   
   /* Enviando a la siguiente vista, una vez que se llenaron todos los campos */
 
   $('.btn-sign-up').on('click', function() {
     $(location).attr('href', 'create-profile.html');
-  }); 
-
-  
-
-
+  });
 });

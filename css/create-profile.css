@@ -1,16 +1,15 @@
 
 body {
-
     vertical-align: middle;
     background-image: url(../assets/images/fondo2.png);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    height: 250vh;
     background-position: 100%;
 }   
 
 
-/* Navbar */
+/* Navbar 
 
 .nav-extended {
     z-index:999999999;
@@ -22,45 +21,82 @@ body {
 
 .imglogo img{
 width: 30%;
-}
+} */
 
-@media only screen and (max-width: 992px){
 
-nav .brand-logo {
- -webkit-transform: none; 
-transform:none; 
-
-}
-}
-
-/* Fin Navbar */
-
-/* fondo blanco */
 
 
 .card-panel {
-
     margin: auto;
+    margin-top: 4em;
+    border-radius: 10px;
 }
 
-/* Fin fondo blanco */
-
-.kv-avatar .krajee-default.file-preview-frame,.kv-avatar .krajee-default.file-preview-frame:hover {
-    margin: 0;
-    padding: 0;
-    border: none;
-    box-shadow: none;
-    text-align: center;
-}
-.kv-avatar {
-    display: inline-block;
-}
-.kv-avatar .file-input {
-    display: table-cell;
-    width: 213px;
-}
-
+/* Logotipo */
 .logo-rolling {
     width: 30%;
-    margin-left: 40%;
+    margin-left: 35%;
 }
+
+
+/* Input de selección de imagen */
+
+.preview a {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    right: 5px;
+}
+
+#file-info {
+    display: block;
+   
+}
+
+.card {
+    width: 60%;
+    height: 30vh;
+    margin: 0 auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    position: relative;
+}
+
+.card img {
+    width: 100%;
+}
+
+input[type=file] {
+    position: absolute;
+    visibility: hidden;
+    width: 0;
+    z-index: -9999;
+} 
+
+.btn-delate-img {
+    margin-top: 2em;
+}
+
+i {
+    color: rgb(250,30,52)  
+}
+
+@media only screen and (max-width: 992px){
+    
+    nav .brand-logo {
+     -webkit-transform: none; 
+    transform:none; 
+    }
+}
+
+@media only screen and (min-width: 992px){
+    
+    body {
+    height: 140vh;
+    }
+
+    .card-panel {
+        border-radius: 20px;
+    }
+}
+
