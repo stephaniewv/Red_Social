@@ -21,12 +21,12 @@ $(document).ready(function() {
     reader.readAsDataURL(this.files[0]);
     $('#file-select').addClass('hide');
     /* Añadiendo el botón de eliminar imagen */
-    var imgDelate = $('<button class = "btn col l6 offset-l3 btn-delate-img red"></button');
-    imgDelate.text('Eliminar');
-    $('.container-pg').append(imgDelate);
+    var imgDelete = $('<button class = "btn col l6 offset-l3 btn-delate-img red"></button');
+    imgDelete.text('Eliminar');
+    $('.container-pg').append(imgDelete);
 
     /* Funcionalidad del botón eliminar */
-    imgDelate.click(function() {
+    imgDelete.click(function() {
       $('.preview  img').removeAttr('src');
       $('.btn-delate-img').addClass('hide');
       $('#file-select').toggleClass('hide');
@@ -55,8 +55,8 @@ $(document).ready(function() {
   /* Validación del formulario de la creación del personaje*/
   var pgName = [],
     pgAge = [],
-    pgDateBirdth = [],
-    pgGenero = [],
+    pgDateBirth = [],
+    pgGender = [],
     pgCountry = [],
     pgRelationship = [],
     pgTheme = [];
@@ -64,23 +64,25 @@ $(document).ready(function() {
   $('.btn-start').click(function() {
     var pgNameVal = $('.pg-name').val();
     pgAgeVal = $('.pg-age').val();
-    pgDateBirdthVal = $('.date-birth').val();
-    pgGeneroVal = $('.genero').val();
+    pgDateBirthVal = $('.date-birth').val();
+    pgGenderVal = $('.gender').val();
     pgCountryVal = $('.country').val();
     pgRelationshipVal = $('.relationship').val();
     pgThemeVal = $('.thematic').val();
 
     pgName.push(pgNameVal);
-    pgDateBirdth.push(pgAgeVal);
-    pgGenero.push(pgGeneroVal);
+    pgDateBirth.push(pgDateBirthVal);
+    pgAge.push(pgAgeVal);
+    pgGender.push(pgGenderVal);
     pgCountry.push(pgCountryVal);
     pgTheme.push(pgThemeVal);
 
     localStorage.setItem('name_pg', JSON.stringify(pgName));
     localStorage.setItem('age_pg', JSON.stringify(pgAge));    
-    localStorage.setItem('pg_date_birth', JSON.stringify(pgDateBirdth));
-    localStorage.setItem('pg_genero', JSON.stringify(pgCountry));
-    localStorage.setItem('pg_country', JSON.stringify(pgRelationship));
+    localStorage.setItem('pg_date_birth', JSON.stringify(pgDateBirth));
+    localStorage.setItem('pg_gender', JSON.stringify(pgGender));
+    localStorage.setItem('pg_country', JSON.stringify(pgCountry));
+    localStorage.setItem('pg_relationship', JSON.stringify(pgRelationship));
     localStorage.setItem('pg_them', JSON.stringify(pgTheme));
   });    
    
@@ -99,8 +101,8 @@ $(document).ready(function() {
     return $('.date-birth').val();
   }
 
-  function generoCharacterValid() {
-    return $('.ganero').val();
+  function genderCharacterValid() {
+    return $('.gender').val();
   }
 
   function countryCharacterValid() {
@@ -116,7 +118,7 @@ $(document).ready(function() {
   }
 
   function allOk() {
-    return nameCharacterValid() && ageCharacterValid() && dateBirthCharacterValid() && generoCharacterValid() && countryCharacterValid() && relationshipCharacterValid() && themeCharacterValid();
+    return nameCharacterValid() && ageCharacterValid() && dateBirthCharacterValid() && genderCharacterValid() && countryCharacterValid() && relationshipCharacterValid() && themeCharacterValid();
   }
 
   /* Si ambos campos son correctos, se habilita el botón */
