@@ -201,11 +201,46 @@ form {
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px; 
 }
+/* Input de selección de imagen */
 
-.input-img {
-    background-color: #fadf44;
-    padding: 1em 2em;
-    border-radius: 5px;
+.preview a {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    right: 5px;
+}
+
+#file-info {
+    display: block;
+   
+}
+
+.card {
+    width: 60%;
+    height: 30vh;
+    margin: 0 auto !important;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    position: relative;
+}
+
+.card img {
+    width: 60%;
+}
+
+input[type=file] {
+    position: absolute;
+    visibility: hidden;
+    width: 0;
+    z-index: -9999;
+} 
+
+.btn-delate-img {
+    margin-top: 2em;
+}
+
+#file-info-cover, #file-info-st {
+    margin-left: 20%;
 }
 
 .modal-close {

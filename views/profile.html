@@ -48,17 +48,21 @@
           </div>
           <ul class="side-nav" id="mobile-demo">
             <li>
-              <a href="/inicio.html"><i class="material-icons">person</i>Mi Perfil</a>
+              <a href="#"><i class="material-icons">person</i>Mi Perfil</a>
             </li>
             <li>
-              <a href="/inicio.html"><i class="material-icons">web</i>Home</a>
+              <a href="inicio.html"><i class="material-icons">web</i>Home</a>
             </li>
             <li>
-              <a href="/inicio.html"><i class="material-icons">chat</i>Chat</a>
+              <a href="#"><i class="material-icons">chat</i>Chat</a>
             </li>
             <li>
-              <a href="/inicio.html"><i class="material-icons">notifications</i>Notificaciones</a>
+              <a href="#"><i class="material-icons">notifications</i>Notificaciones</a>
             </li>
+            <li>
+              <a href="home.html"><i class="material-icons log-out">subdirectory_arrow_right</i>Cerrar sesión</a>
+            </li>  
+          
           </ul>
         </div>
       </nav>
@@ -209,9 +213,15 @@
             </div>
           </div>
           <div class="row space-up">
-            <div class="input-field col s12 col l6 offset-l2">     
+            <div class="input-field col s12 col l8 offset-l2 img-select">   
               <p>Selecciona una imagen de portada</p>
-              <input type="file" id="files" name="files[]" class= "input-img img-big">
+              <div class="card preview cover valign-wrapper">
+                <a href="#" id="file-select-cover" class="btn">Elige una foto</a>   <img>
+              </div>
+              <div>
+                <span id="file-info-cover" class="center-align">Aún no haz seleccionado una foto</span>
+              </div>
+              <input type="file" name="file" id="file-input">
             </div>
           </div>
           <div class="row space-up">
@@ -227,21 +237,24 @@
               </div>
           </div>
           <div class="row space-up">
-            <div class="input-field col s12 col l6 offset-l2">
+            <div class="input-field col s12 col l8 offset-l2 img-select-character">
               <p>Selecciona una imagen para tu historia</p>
-              <input type="file" id="fil" name="files[]" class= "input-img space-down img-st">
+              <div class="card preview valign-wrapper character-st">
+                <a href="#" id="file-select-character" class="btn">Elige una foto</a>   <img>
+              </div>
+              <div>
+                <span id="file-info-st" class="space-down">Aún no haz seleccionado una foto</span>
+              </div>
+              <input type="file" name="file" id="file-character">
             </div>
           </div>
            
         </form>
         <div class="row">
-            <div class="col s12 col l5 offset-l5 space-up">
-                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">¡Crear!</a>
-
+            <div class="col s6 offset-s4 col l5 offset-l5 space-up">
+              <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">¡Crear!</a>
             </div>
-
           </div> 
-       
       </div>
     </div>
   </div>

@@ -183,15 +183,76 @@ $(document).ready(function() {
     localStorage.setItem('img-st', imgSt);
   });
 
+  /* Sección de creación de imagen seleccionada para portada*/
+  $('#file-select-cover').click(function() {
+    event.preventDefault();
+    $('#file-input').click();
+  });
+
+  $('#file-input').change(function() {
+    var nameFile = (this.files[0].name).toString();
+    var reader = new FileReader();
+    $('#file-info-cover').text('');
+    $('#file-info-cover').text(nameFile);
+
+    reader.onload = function(e) {
+      $('.cover img').attr('src', e.target.result);
+    };
+
+    
+    reader.readAsDataURL(this.files[0]);
+    $('#file-select-cover').addClass('hide');
+    /* Añadiendo el botón de eliminar imagen */
+    var imgDelete = $('<button class = "btn col l6 offset-l3 offset-s4 btn-delate-img-cover red"></button');
+    imgDelete.text('Eliminar');
+    $('.img-select').append(imgDelete);
+
+    /* Funcionalidad del botón eliminar */
+    imgDelete.click(function() {
+      $('.cover img').removeAttr('src');
+      $('.btn-delate-img-cover').addClass('hide');
+      $('#file-select-cover').toggleClass('hide');
+      $('#file-info-cover').text('Aún no haz seleccionado una foto');
+    })
+  });
+
+  /* Sección de creación de imagen seleccionada para starter*/
+  $('#file-select-character').click(function() {
+    event.preventDefault();
+    $('#file-character').click();
+  });
+
+  $('#file-character').change(function() {
+    var nameFile = (this.files[0].name).toString();
+    var reader = new FileReader();
+    $('#file-info-st').text('');
+    $('#file-info-st').text(nameFile);
+
+    reader.onload = function(e) {
+      $('.character-st img').attr('src', e.target.result);
+    };
+
+    
+    reader.readAsDataURL(this.files[0]);
+    $('#file-select-character').addClass('hide');
+    /* Añadiendo el botón de eliminar imagen */
+    var imgDelete = $('<button class = "btn col l6 offset-l3 offset-s4 btn-delate-st-cover red space-down"></button');
+    imgDelete.text('Eliminar');
+    $('.img-select-character').append(imgDelete);
+
+    /* Funcionalidad del botón eliminar */
+    imgDelete.click(function() {
+      $('.character-st img').removeAttr('src');
+      $('.btn-delate-st-cover').addClass('hide');
+      $('#file-select-character').toggleClass('hide');
+      $('#file-info-st').text('Aún no haz seleccionado una foto');
+    })
+  });
+
+
 
   /* Redireccionando a la vista del starter */
   $('.modal-close').click(function() {
     window.location.href = '../views/starter.html';
   }); 
-
-
-  /* Redireccionando a la vista del inicio*/
-  $('.web').click(function() {
-    window.location.href = '../views/inicio.html';
-  });
 });
