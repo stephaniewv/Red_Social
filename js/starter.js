@@ -28,6 +28,15 @@ $(document).ready(function() {
   });
 
   /* Funcionalidad para obtner los datos llenados previamente en el fomulario */
+  var imagenCover = JSON.parse(localStorage.getItem('imagen_cover'));
+  $('.img-portada').attr('src', '../assets/images/' + imagenCover);
+
+  var imagenSt = JSON.parse(localStorage.getItem('imagen_st'));
+  $('.img-card img').attr('src', '../assets/images/' + imagenSt);
+
+  var imagenPg = JSON.parse(localStorage.getItem('img-avatar'));
+  $('.user').attr('src', '../assets/images/friends' + imagenPg);
+  
   var inputTitle = localStorage.getItem('title-starter');
   $('.header').html(inputTitle);
 
@@ -40,12 +49,10 @@ $(document).ready(function() {
   var blockquoteText = localStorage.getItem('blockquote');
   $('.blockquote-st').html(blockquoteText);
 
-  
-  var imgOne = localStorage.getItem('imgData');
-  $('.img-o').attr('src', imgOne); 
+  var privacityText = localStorage.getItem('privacity');
+  $('.privacity-text').html('Estado: ' + privacityText);
 
-  var imgTwo = localStorage.getItem('img-st');
-  $('.img-st2').attr('src', imgTwo);
+
 
   /* Fin de la funcionalidad para los datos del usuario/*
 
@@ -68,7 +75,8 @@ $(document).ready(function() {
     column2.append(icon, textarea, btn);
     $('.starter-body').append(row);
 
-    /* Código para obtener la imagen que se toma del archivo del usuario */
+/*
+     Código para obtener la imagen que se toma del archivo del usuario 
     function archivo(evt) {
       var files = evt.target.files; // FileList object
       // Obtenemos la imagen del campo "file". 
@@ -88,7 +96,7 @@ $(document).ready(function() {
         reader.readAsDataURL(f);
       }
     }      
-    document.getElementById('files').addEventListener('change', archivo, false);
+    document.getElementById('files').addEventListener('change', archivo, false); */
 
     
     /* Código para la funcionalidad de seguir la historia del starter */

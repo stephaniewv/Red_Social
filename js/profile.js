@@ -140,34 +140,6 @@ $(document).ready(function() {
   });
 
 
-  /*
-  $('.img-big').change(function(){
-    debugger
-      // Creamos la Imagen
-     // var img = $('<img>');
-      // Asignamos el atributo source , haciendo uso del método createObjectURL
-      var imagen =  URL.createObjectURL(this.files);
-      // Añadimos al Div
-      localStorage.setItem('img-big-starter', imagen);
-      console.log(imagen);
-    
-  }); 
-
-  /*
-  $('.img-big').change(function() {
-    var imgBig = (this.files[0].name).toString();
-    console.log(imgBig);
-    localStorage.setItem('img-big-starter', '../assets/images/starter/' + imgBig);
-  }); 
-
-  $('.img-st').change(function() {
-    if(this.files && this.files[0]) {
-      var imgSt = URL.createObjectURL(this.files[0]);
-     console.log(imgSt);
-    }
-    
-  }); */
-
   $('#textarea-st').keyup(function() {
     var textStarter = $('#textarea-st').val();
     localStorage.setItem('text-st', textStarter);
@@ -183,6 +155,11 @@ $(document).ready(function() {
     localStorage.setItem('img-st', imgSt);
   });
 
+  $('#privacity').change(function() {
+    var privacityState = $('#privacity').val();
+    localStorage.setItem('privacity', privacityState);
+  })
+
   /* Sección de creación de imagen seleccionada para portada*/
   $('#file-select-cover').click(function() {
     event.preventDefault();
@@ -194,6 +171,8 @@ $(document).ready(function() {
     var reader = new FileReader();
     $('#file-info-cover').text('');
     $('#file-info-cover').text(nameFile);
+    localStorage.setItem('imagen_cover', JSON.stringify(nameFile));
+    console.log(nameFile);
 
     reader.onload = function(e) {
       $('.cover img').attr('src', e.target.result);
@@ -223,10 +202,12 @@ $(document).ready(function() {
   });
 
   $('#file-character').change(function() {
-    var nameFile = (this.files[0].name).toString();
+    var nameFileSt = (this.files[0].name).toString();
+    localStorage.setItem('imagen_st', JSON.stringify(nameFileSt));
+    console.log(nameFileSt);
     var reader = new FileReader();
     $('#file-info-st').text('');
-    $('#file-info-st').text(nameFile);
+    $('#file-info-st').text(nameFileSt);
 
     reader.onload = function(e) {
       $('.character-st img').attr('src', e.target.result);
@@ -246,11 +227,10 @@ $(document).ready(function() {
       $('.btn-delate-st-cover').addClass('hide');
       $('#file-select-character').toggleClass('hide');
       $('#file-info-st').text('Aún no haz seleccionado una foto');
-    })
+    });
   });
 
-
-
+ 
   /* Redireccionando a la vista del starter */
   $('.modal-close').click(function() {
     window.location.href = '../views/starter.html';

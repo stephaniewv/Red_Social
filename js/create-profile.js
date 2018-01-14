@@ -8,10 +8,11 @@ $(document).ready(function() {
   });
 
   $('#file').change(function() {
-    var nameFile = (this.files[0].name).toString();
+    var nameFilePg = (this.files[0].name).toString();
+    localStorage.setItem('imagen_pg', JSON.stringify(nameFilePg));
     var reader = new FileReader();
     $('#file-info').text('');
-    $('#file-info').text(nameFile);
+    $('#file-info').text(nameFilePg);
 
     reader.onload = function(e) {
       $('.preview  img').attr('src', e.target.result);
