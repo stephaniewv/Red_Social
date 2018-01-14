@@ -1,5 +1,4 @@
 body {
-
 display: flex;
 min-height: 100vh;
 flex-direction: column;
@@ -7,10 +6,13 @@ vertical-align: middle;
 background-image: url(../assets/images/fondo2.png);
 background-repeat: no-repeat;
 background-size: cover;
-height: 130vh;
+height: 140vh;
 background-position: center;
 }
 
+.border-radius{
+  border-radius: 10px;
+}
 
 /* Navbar */
 
@@ -28,12 +30,11 @@ background-position: center;
   top: 30%;
 }
 
-    background-color: #5f4a00;
-} 
+
 
 .slidessize img{
     opacity: 0.6;
-} */
+} 
 
 .card-panel {
     margin-top: 3em !important;
@@ -41,6 +42,7 @@ background-position: center;
 
 .logo-rolling {
     width: 20%;
+    cursor: pointer;
 }
 
 .container-logo {
@@ -54,7 +56,7 @@ background-position: center;
 .material-icons {
     font-size: 60px;
     color: #f41e34;
->>>>>>> f876acf20c777f7cc15a62a2ab11e2ea11efd64f
+ /*>>>>>>> f876acf20c777f7cc15a62a2ab11e2ea11efd64f */
 }
 
 
@@ -101,4 +103,16 @@ background-position: center;
         transform: none;
     }    
 
+}
+
+
+@media only screen and (min-width: 992px){
+  
+  .card-panel {
+      border-radius: 20px;
+  }
+
+  body {
+    height: 130vh;
+  }
 }

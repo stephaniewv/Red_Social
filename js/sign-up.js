@@ -71,4 +71,11 @@ $(document).ready(function() {
   $('.btn-sign-up').on('click', function() {
     $(location).attr('href', 'create-profile.html');
   });
+
+  /* Enviando a la vista home */
+
+  $('.logo-rolling').on('click', function() {
+    $(location).attr('href', 'home.html');
+  });
+
 });
