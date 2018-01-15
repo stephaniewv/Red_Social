@@ -1,15 +1,40 @@
+body{
+  padding: 0;
+  margin:0
+}
+
 .btnsign{
-    color: rgba(0,0,0,0.87);
-    font-weight: 700;
-    text-transform: capitalize;
+  color: #FFF;
+  font-weight: 700;
+  text-transform: capitalize;
+	border-radius: 4px;
+	background-color:rgb(248, 61, 79);
+}
+
+nav ul a.btn{
+	    margin-top: -6px;
+}
+
+nav ul a{
+    -webkit-transition: background-color .3s;
+    transition: background-color .3s;
+    font-size: 1rem;
+    color: #fff;
+    display: inline-block;
+    padding: 0 15px;
+    cursor: pointer;
+    height: 36px;
+    line-height: 36px;
+    padding: 0 2rem;
+    border: 1px solid white;
     border-radius: 4px;
 }
 
 /* Navbar */
 
 .nav-extended {
-    position: absolute;z-index:999999999;
-    margin-top: 2em;
+  position: absolute;z-index:999999999;
+	margin-top: 2em;
 }
 
 .nav-wrapper {
@@ -23,7 +48,7 @@
 }
 
 .slider .slides{
-    background-color: #f41e34;
+    background-color: #6b373d;
     /*#5f4a00*/
 }
 
@@ -40,11 +65,13 @@
 .callout {
     position: relative;
     z-index: 10;
-    top: 80%;
+    top: 70%;
 }
 
+/* logo del navbar */
+
 .brand-logo img{
-    width: 70%;
+    width: 20%;
 }
 
 
@@ -69,3 +96,61 @@
         -webkit-transform: none;
         transform: none;
 }
+}
+
+/* Estilo footer */
+
+footer {
+    background: -webkit-linear-gradient(top,rgb(204, 38, 55) ,rgb(250, 70, 88));
+    background: -o-linear-gradient(bottom ,rgb(204, 38, 55) ,rgb(250, 70, 88));
+    background: -moz-linear-gradient(bottom ,rgb(204, 38, 55) ,rgb(250, 70, 88));
+    background: linear-gradient(to bottom ,rgb(204, 38, 55) ,rgb(250, 70, 88));
+}
+  
+.logo-footer {
+    width: 15%;
+    margin-left: 1em;
+    margin-top: 2em;
+    display: flex;
+}
+ 
+  
+  .list-display {
+      display: flex;
+      justify-content: space-between;
+  }
+  
+  
+  
+  
+  @media only screen and (max-width: 992px){  
+      nav .brand-logo {
+       -webkit-transform: none; 
+      transform:none; 
+      }
+  }
+  
+  @media only screen and (min-width: 992px) {
+      .user-img-div {
+          margin-left: 5% !important;
+      }
+      
+  }
+  
+  @media (max-width:600px) {
+      .modal {
+          width: 90%;
+      }
+  
+      .input-img {
+          width: 60%;
+          margin-left: 4em;
+      }
+  
+      .card-content {
+          padding: 10px !important;
+      }
+      
+  }
+
+

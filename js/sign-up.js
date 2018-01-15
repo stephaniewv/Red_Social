@@ -53,7 +53,29 @@ $(document).ready(function() {
     passwordVal = $('#password').val();
     confirmPasswordVal = $('#confirm-password').val();
 
-    name.push(nameVal);
+    // create email and password to login
+    firebase.auth().createUserWithEmailAndPassword(emailVal, passwordVal).then(function(user) {
+      console.log("user created: " + user);
+      console.log(user.uid);
+      var database = firebase.database();
+      database.ref('users/' + user.uid).set({
+        name: nameVal,
+        lastName: lastNameVal,
+        email: emailVal,
+        password: passwordVal
+      }).then(function(snapshot) {
+        console.log(snapshot);
+        window.location = '/views/create-profile.html';
+      });
+    }).catch(function(error) {
+      var errorCode = error.Code;
+      var errorMessage = error.message;
+      console.log(errorMessage);
+    });
+
+    
+
+    /*name.push(nameVal);
     lastName.push(lastNameVal);
     email.push(emailVal);
     password.push(passwordVal);
@@ -63,14 +85,14 @@ $(document).ready(function() {
     localStorage.setItem('last_name_new_user', JSON.stringify(lastName));
     localStorage.setItem('email_new_user', JSON.stringify(email));
     localStorage.setItem('password_new_user', JSON.stringify(password));
-    localStorage.setItem('confirm_password_new_user', JSON.stringify(equalPassword));
+    localStorage.setItem('confirm_password_new_user', JSON.stringify(equalPassword));*/
   });    
   
   /* Enviando a la siguiente vista, una vez que se llenaron todos los campos */
 
-  $('.btn-sign-up').on('click', function() {
+  /*$('.btn-sign-up').on('click', function() {
     $(location).attr('href', 'create-profile.html');
-  });
+  });*/
 
   /* Enviando a la vista home */
 

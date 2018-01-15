@@ -2,9 +2,26 @@ $(document).ready(function() {
   /* Inicializador del botón del menu hamburguesa */
   $('.button-collapse').sideNav();
 
+  var uid;
+  var email;
+
+  firebase.auth().onAuthStateChanged(function (user) {
+    if (user) {
+      // User is signed in.
+      email = user.email;
+      console.log(email);
+      uid = user.uid;
+      console.log(uid);
+    } else {
+      window.location = '/views/home.html';
+    }
+  });
+
+  var profileId = localStorage.getItem('profileId');
+
   /* Obteniendo la imagen del personaje*/
-  var imgAvatar = localStorage.getItem('img-avatar');
-  $('.user').attr('src', '../assets/images/friends/' + imgAvatar);
+  var imgAvatar = localStorage.getItem('profile-photoURL');
+  $('.user').attr('src', imgAvatar);
   console.log(imgAvatar);
 
   

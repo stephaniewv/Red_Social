@@ -1,24 +1,40 @@
-$(document).ready(function() {
+$(document).ready(function () {
+
+  var uid;
+  var email;
+
+  firebase.auth().onAuthStateChanged(function (user) {
+    if (user) {
+      // User is signed in.
+      email = user.email;
+      console.log(email);
+      uid = user.uid;
+      console.log(uid);
+    } else {
+      window.location = '/views/home.html';
+    }
+  });
+
   $('select').material_select();
 
   /* Sección de creación de imagen seleccionada */
-  $('#file-select').click(function() {
+  $('#file-select').click(function () {
     event.preventDefault();
     $('#file').click();
   });
 
-  $('#file').change(function() {
+  $('#file').change(function () {
     var nameFilePg = (this.files[0].name).toString();
     localStorage.setItem('imagen_pg', JSON.stringify(nameFilePg));
     var reader = new FileReader();
     $('#file-info').text('');
     $('#file-info').text(nameFilePg);
 
-    reader.onload = function(e) {
+    reader.onload = function (e) {
       $('.preview  img').attr('src', e.target.result);
     };
 
-    
+
     reader.readAsDataURL(this.files[0]);
     $('#file-select').addClass('hide');
     /* Añadiendo el botón de eliminar imagen */
@@ -27,7 +43,7 @@ $(document).ready(function() {
     $('.container-pg').append(imgDelete);
 
     /* Funcionalidad del botón eliminar */
-    imgDelete.click(function() {
+    imgDelete.click(function () {
       $('.preview  img').removeAttr('src');
       $('.btn-delate-img').addClass('hide');
       $('#file-select').toggleClass('hide');
@@ -35,9 +51,9 @@ $(document).ready(function() {
     })
   });
 
-  
+
   /* Código para obtener el valor de la imagen de usuario */
-  $('#avatar-1').change(function() {
+  $('#avatar-1').change(function () {
     var avatar = (this.files[0].name).toString();
     localStorage.setItem('img-avatar', avatar);
   });
@@ -46,7 +62,7 @@ $(document).ready(function() {
 
   $('.datepicker').pickadate({
     selectMonths: true, // Creates a dropdown to control month
-    selectYears: 15, // Creates a dropdown of 15 years to control year,
+    selectYears: 60, // Creates a dropdown of 15 years to control year,
     today: 'Today',
     clear: 'Clear',
     close: 'Ok',
@@ -62,16 +78,59 @@ $(document).ready(function() {
     pgRelationship = [],
     pgTheme = [];
 
-  $('.btn-start').click(function() {
+  $('.btn-start').click(function () {
     var pgNameVal = $('.pg-name').val();
     pgAgeVal = $('.pg-age').val();
     pgDateBirthVal = $('.date-birth').val();
-    pgGenderVal = $('.gender').val();
-    pgCountryVal = $('.country').val();
-    pgRelationshipVal = $('.relationship').val();
-    pgThemeVal = $('.thematic').val();
+    pgGenderVal = $('.gender option:selected').text();
+    pgCountryVal = $('.country option:selected').text();
+    pgRelationshipVal = $('.relationship option:selected').text();
+    pgThemeVal = $('.thematic option:selected').text();
 
-    pgName.push(pgNameVal);
+    var file = ($('#file'))[0].files[0];
+    var database = firebase.database();
+    var newProfileKey = database.ref().child('profiles').push().key;
+    var storage = firebase.storage();
+    var storageDef = firebase.storage().ref("images/" + uid + "/" + "/profiles/" + newProfileKey + "/" + file.name);
+    var uploadTask = storageDef.put(file);
+    $('#loaderProgress').addClass('progress');
+    uploadTask.on('state_changed', function (snapshot) {
+      var progress = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
+      console.log('Upload is ' + progress + '% done');
+    }, function (error) {
+      console.log(error.code);
+      console.log(error.message);
+    }, function () {
+      // finish load image to firebase storage
+      var downloadURL = uploadTask.snapshot.downloadURL;
+
+      console.log(downloadURL);
+
+      var profileData = {
+        roleName: pgNameVal,
+        age: pgAgeVal,
+        birthday: pgDateBirthVal,
+        gender: pgGenderVal,
+        country: pgCountryVal,
+        relationship: pgRelationshipVal,
+        theme: pgThemeVal,
+        photoURL: downloadURL
+      }
+
+      var updates = {};
+      updates['/users/' + uid + "/profiles/" + newProfileKey] = profileData;
+      console.log(updates);
+
+      database.ref().update(updates).then(function(snapshot) {
+        localStorage.setItem('profileId', newProfileKey);
+        localStorage.setItem('profile-photoURL', downloadURL);
+        window.location = '/views/profile.html';
+      }).catch(function(error) {
+        $('#loaderProgress').removeClass('progress');
+      });
+    });
+
+    /*pgName.push(pgNameVal);
     pgDateBirth.push(pgDateBirthVal);
     pgAge.push(pgAgeVal);
     pgGender.push(pgGenderVal);
@@ -79,14 +138,14 @@ $(document).ready(function() {
     pgTheme.push(pgThemeVal);
 
     localStorage.setItem('name_pg', JSON.stringify(pgName));
-    localStorage.setItem('age_pg', JSON.stringify(pgAge));    
+    localStorage.setItem('age_pg', JSON.stringify(pgAge));
     localStorage.setItem('pg_date_birth', JSON.stringify(pgDateBirth));
     localStorage.setItem('pg_gender', JSON.stringify(pgGender));
     localStorage.setItem('pg_country', JSON.stringify(pgCountry));
     localStorage.setItem('pg_relationship', JSON.stringify(pgRelationship));
-    localStorage.setItem('pg_them', JSON.stringify(pgTheme));
-  });    
-   
+    localStorage.setItem('pg_them', JSON.stringify(pgTheme));*/
+  });
+
 
   /* Validando el formulario de registro del personaje */
 
@@ -127,9 +186,5 @@ $(document).ready(function() {
     $('.btn-start').prop('disabled', false);
   });
 
-  /* Código para enviar a la siguiente vista*/
-  $('.btn-start').on('click', function() {
-    window.location.href = 'profile.html';
-  }); 
 });
 

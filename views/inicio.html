@@ -16,16 +16,30 @@
 
 <body>
 
-	<nav class="top-nav">
-		<div class="container">
-			<a href="#" data-activates="nav-mobile" class="button-collapse top-nav full hide-on-large-only">
-				<i class="material-icons">menu</i>
-			</a>
-			<div class="nav-wrapper">
-				<a class="page-title">Rolling</a>
-			</div>
-		</div>
-	</nav>
+		<nav class="top-nav">
+				<div class="nav-wrapper">
+					  <a href="#" data-activates="mobile-demo" class="button-collapse">
+							  <i class="material-icons">menu</i>
+							</a>
+					<ul  class="right hide-on-med-and-down">
+					  <li>
+						<a id="menu" class="waves-effect waves-light btn btn-floating"><i class="material-icons">group_add</i></a>
+					  </li>
+					  <li>
+						<a href="inicio.html"></a><i class="material-icons">person</i></a>
+					  </li>
+					  <li>
+						<a href="/inicio.html"><i class="material-icons">web</i></a>
+					  </li>
+					  <li>
+						<a href="/inicio.html"><i class="material-icons">chat</i></a>
+					  </li>
+					  <li>
+						<a href="/inicio.html"><i class="material-icons">notifications</i></a>
+					  </li>
+					</ul>
+				  </div>
+			</nav>
 
 	<ul id="nav-mobile" class="side-nav fixed" style="transform: translateX(0%);">
 		<li class="logo">
@@ -33,6 +47,14 @@
 				<img src="../assets/logotipo/logo2.png">
 			</a>
 		</li>
+
+		<div class="container">
+			<div class="row center">
+				Hola
+				<h4 id="dataperfil">Asura</h4>
+			</div>
+		</div>
+
 
 		<li class="bold">
 			<a href="#" class="waves-effect waves-teal">
@@ -42,13 +64,18 @@
 			<a href="#" class="waves-effect waves-teal">
 				<i class="material-icons left">forum</i>Mensajes</a>
 		</li>
+
 		<li class="no-padding">
 			<ul class="collapsible collapsible-accordion">
 				<li class="bold">
-					<a class="collapsible-header waves-effect waves-teal">
-						<i class="material-icons left">people</i>Perfiles</a>
+					<a class="orange collapsible-header waves-effect waves-teal" style="color:white">
+						Perfiles<i class="material-icons left" style="color:white">arrow_drop_down</i></a>
 					<div class="collapsible-body">
 						<ul>
+							<li class="bold">
+								<a href="#" class="waves-effect waves-teal">
+									<i class="material-icons left">add</i>Crea Perfiles</a>
+							</li>
 							<li>
 								<a href="#">
 									<i class="material-icons left">person</i>Perfil 1</a>
@@ -74,10 +101,10 @@
 				</li>
 				<li class="bold active">
 					<a class="collapsible-header active waves-effect waves-teal">
-						<i class="material-icons left">wc</i>Hermandades</a>
+							<i class="material-icons left">arrow_drop_down</i>Hermandades</a>
 					<div class="collapsible-body" style="display: block;">
 						<ul>
-							<li class="active">
+							<li>
 								<a href="#">
 									<i class="material-icons left">multiline_chart</i>Hermandad1</a>
 							</li>
@@ -101,6 +128,10 @@
 		<li class="bold">
 			<a href="#" class="waves-effect waves-teal">
 				<i class="material-icons left">child_care</i>Amigos</a>
+		</li>
+		<li class="bold">
+			<a href="#" class="waves-effect waves-teal signOut">
+				<i class="material-icons left">power_settings_new</i>Cerrar Sesion</a>
 		</li>
 	</ul>
 
@@ -135,9 +166,8 @@
 
 
 		<a href="https://plus.google.com/hangouts/_?gid=APP_ID" style="text-decoration:none;">
-			<img src="https://ssl.gstatic.com/s2/oz/images/stars/hangout/1/gplus-hangout-15x79-normal.png"
-				alt="Start a Hangout"
-				style="border:0;width:79px;height:15px;"/>
+			<img src="https://ssl.gstatic.com/s2/oz/images/stars/hangout/1/gplus-hangout-15x79-normal.png" alt="Start a Hangout" style="border:0;width:79px;height:15px;"
+			/>
 		</a>
 
 		<!-- Chat -->
@@ -153,14 +183,33 @@
 					</div>
 				</div>
 			</nav>
-			<div class="inner" id="inner">
-				<div class="content" id="content"></div>
+			<div class="container containerchat">
+				<div class="row">
+					<form action="">
+						<div>
+							<label for="nombre">Nombre</label>
+							<input type="text" id="nombre">
+						</div>
+						<div>
+							<label for="mensaje">Mensaje</label>
+							<textarea name="" id="mensaje" cols="30" rows="10"></textarea>
+						</div>
+						<button type="button" id="btnenviar">Enviar</button>
+					</form>
+
+					<ul id="chatul">
+						<li>
+							<b>Nombre:</b> Mensaje
+						</li>
+						<li>
+							<b>Nombre:</b> Mensaje
+						</li>
+					</ul>
+				</div>
 			</div>
-			<div class="bottom" id="bottom">
-				<textarea class="input" id="input"></textarea>
-				<div class="send" id="send"></div>
-			</div>
+
 		</div>
+
 
 	</main>
 
@@ -168,6 +217,12 @@
 
 	<script src="../vendors/js/jquery-3.2.1.min.js"></script>
 	<script src="../vendors/materialize/js/materialize.min.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/4.2.0/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/4.2.0/firebase-auth.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/4.2.0/firebase-database.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/4.2.0/firebase-storage.js"></script>
+	<script src="../vendors/js/firebaseapp.js"></script>
 	<script src="../js/inicio.js"></script>
 </body>
 

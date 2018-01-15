@@ -1,10 +1,11 @@
 body{
 	vertical-align: middle;
-    background-image: url(../assets/images/fondo2.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-    background-position: center
+	background-image: url(../assets/logotipo/fondo2.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+	background-position: center;
+
 }
 
 header .brand-logo {
@@ -21,15 +22,17 @@ ul.side-nav.fixed li.logo {
 }
 
 
-nav{
+
+nav {
+	height: 100px;
 	background: rgb(250,223,68);
-    background: -moz-linear-gradient(left, rgb(250,223,68) 0%, rgb(250,30,52) 100%);
-    background: -webkit-gradient(left top, right top, color-stop(0%, rgb(250,223,68)), color-stop(100%, rgb(250,30,52)));
-    background: -webkit-linear-gradient(left, rgb(250,223,68) 0%, rgb(250,30,52) 100%);
-    background: -o-linear-gradient(left, rgb(250,223,68) 0%, rgb(250,30,52) 100%);
-    background: -ms-linear-gradient(left, rgb(250,223,68) 0%, rgb(250,30,52) 100%);
-    background: linear-gradient(to right, rgb(250,223,68) 0%, rgb(250,30,52) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fadf44 ', endColorstr='#fa1e34 ', GradientType=1 );
+	background: -moz-linear-gradient(left, rgb(250,223,68) 0%, rgb(250,30,52) 100%);
+	background: -webkit-gradient(left top, right top, color-stop(0%, rgb(250,223,68)), color-stop(100%, rgb(250,30,52)));
+	background: -webkit-linear-gradient(left, rgb(250,223,68) 0%, rgb(250,30,52) 100%);
+	background: -o-linear-gradient(left, rgb(250,223,68) 0%, rgb(250,30,52) 100%);
+	background: -ms-linear-gradient(left, rgb(250,223,68) 0%, rgb(250,30,52) 100%);
+	background: linear-gradient(to right, rgb(250,223,68) 0%, rgb(250,30,52) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fadf44 ', endColorstr='#fa1e34 ', GradientType=1 );
 }
 
 ul.side-nav.leftside-navigation {
@@ -37,9 +40,8 @@ ul.side-nav.leftside-navigation {
 	overflow: hidden;
 }
 
-nav .nav-wrapper {
-	position: relative;
-	height: 100%;
+.nav-wrapper {
+	margin: 0 30px
 }
 
 .navbar-fixed {
@@ -134,10 +136,6 @@ nav .nav-wrapper {
 			box-sizing: border-box;
   }
   
-  body {
-	/* position: relative; */
-	background-color: #FF5722;
-  }
   
   .title {
 	color: #ffffff;
@@ -175,7 +173,13 @@ nav .nav-wrapper {
 	padding: 10.6666666667px;
 	position: relative;
 	margin-bottom: 32px;
-  }
+	}
+	
+	.containerchat{
+			display: flex;
+			position: relative;
+			top: 100px;
+	}
   
   .nav {
 	position: fixed;

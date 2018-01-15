@@ -1,9 +1,12 @@
-var config = {
-      apiKey: "AIzaSyDtsAjvNtidTzvESlO5b3dTSd_pBEsbfqE",
-      authDomain: "rolling-laboratoria.firebaseapp.com",
-      databaseURL: "https://rolling-laboratoria.firebaseio.com",
-      projectId: "rolling-laboratoria",
-      storageBucket: "rolling-laboratoria.appspot.com",
-      messagingSenderId: "227778674041"
-    };
-    firebase.initializeApp(config);
+$(document).ready(function () {
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyA_I-K0bQHTV0WmSauT4blK2JZWkRD6eZs",
+    authDomain: "redsocial-rolling.firebaseapp.com",
+    databaseURL: "https://redsocial-rolling.firebaseio.com",
+    projectId: "redsocial-rolling",
+    storageBucket: "redsocial-rolling.appspot.com",
+    messagingSenderId: "34541777473"
+  };
+  firebase.initializeApp(config);
+});

@@ -46,14 +46,18 @@
           <h6 class="flow-text center-align">Selecciona una imagen de máximo 5MB</h6>
         </div>
         <div class="card preview valign-wrapper">
-          <a href="#" id="file-select" class="btn">Elige una foto</a>    
+          <a href="#" id="file-select" class="btn">Subir Foto</a>    
           <img>
         </div>
         <div>
           <span id="file-info" class="center-align">Aún no haz seleccionado una foto</span>
          </div>
          <input type="file" name="file" id="file">
+         <div id="loaderProgress" class="">
+            <div class="indeterminate"></div>
+        </div>
       </div>
+      
       <!-- Formulario -->
       <div class="col s12 l8"> 
         <div class="row">
@@ -145,6 +149,12 @@
   <script src="../vendors/js/jquery-3.2.1.min.js"></script>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   <script src="../vendors/materialize/js/materialize.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase-database.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase-storage.js"></script>
+  <script src="../vendors/js/firebaseapp.js"></script>
   <script src="../js/create-profile.js"></script>  
 </body>
 </html>
