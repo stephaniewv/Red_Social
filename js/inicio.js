@@ -1,4 +1,4 @@
-// Enlazar imagen
+// Enlazar imagen 
 $(document).ready(function () {
     $('.slider').slider({height: 700});
     $('.button-collapse').sideNav();
