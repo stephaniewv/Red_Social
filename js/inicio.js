@@ -32,6 +32,8 @@ $(document).ready(function () {
     }
   });
 
+  // Signout
+
   $('.signOut').click(function () {
     firebase.auth().signOut().then(function () {
       window.location = "/views/home.html";

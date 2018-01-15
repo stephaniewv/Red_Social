@@ -247,6 +247,13 @@ $(document).ready(function() {
     });
   });
 
+  $('.signOut').click(function () {
+    firebase.auth().signOut().then(function () {
+      window.location = "/views/home.html";
+    }).catch(function (error) {
+      console.log(error.message);
+    });
+  });
  
   /* Redireccionando a la vista del starter */
   $('.modal-close').click(function() {
