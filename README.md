@@ -42,10 +42,6 @@ Fue lanzada al mercado, mediante una promoción en Facebook el 3 de enero del 20
 Comentarios de usuarios de la página Roleados.
 
 ![competencia](assets/images/comentarios.png)
-![competencia](assets/competencia/blog.png)
-![competencia](assets/competencia/error1.png)
-![competencia](assets/competencia/error2.png)
-
 
 **VK**
 
@@ -115,6 +111,31 @@ Aún no tiene planes de dejar el rol, pues lo viene posponiendo año tras año. 
 Nuestra propuesta es una red social llamada "Rolling", que significa movimiento. Con ello queremos captar la fluidez con que los usuarios crean historias y forman lazos entre ellos.
 Brindamos una plataforma responsive que les permite crear perfiles rolplayers. La verificación que ofrecemos al acepter los términos y condiciones, permite a nuestra plataforma brindar un espacio seguro para evitar el cierre de cuentas. A la vez, evitamos que personas externas confundan los perfiles de nuestros usuarios como reales.
 
+
+## Prototipado:
+
+##### 1. Vista Splash
+
+![vista splash](assets/prototipado/splash.jpg)
+
+##### 2. Vista Home:
+![vista home](assets/prototipado/home.jpg)
+
+##### 3. Vista sign-up:
+![vista sign up](assets/prototipado/sign-up.jpg)
+
+##### 4. Vista formulario pg:
+![vista formulario-pg](assets/prototipado/pg-formulario.jpg)
+
+##### 5. Vista perfil:
+![vista perfil](assets/prototipado/perfil.jpg)
+
+##### 7. Vista starter:
+![vista starter](assets/prototipado/starter.jpg)
+
+##### 8. Vista inicio:
+![vista inicio](assets/prototipado/inicio.jpg)
+
 ### Flujo de aplicación:
 
 ##### 1. Vista Splash: Primera vista donde el usuario es saludado con el logo de nuestra red social.
@@ -162,6 +183,8 @@ Brindamos una plataforma responsive que les permite crear perfiles rolplayers. L
 3. Javascript
 4. jQuery
 5. Materialize
+6. firebase
+7. Illustrator
 
 
 
