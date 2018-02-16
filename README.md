@@ -4,7 +4,7 @@ Es una red social para personas que gustan de "rolear" es decir, tomar la person
 
 ![image](https://user-images.githubusercontent.com/32310873/36276958-73e257f8-125d-11e8-8ce4-902cdd1116e9.png)
 
-# Desarrollado para [laboratoria](https://laboratoria.la)
+## Desarrollado para [laboratoria](https://laboratoria.la)
 
 ![logo](assets/images/logo_laboratoria.png)
 
