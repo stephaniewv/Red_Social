@@ -61,7 +61,7 @@ Para crear nuestra red social se ha realizado entrevistas de uno a uno y encuest
 https://docs.google.com/forms/d/1pCfJyXkExKflLrU_cBmC0HnUtxJnc3Tpmwlsn1V5sFo/edit?usp=drive_web
 
 **Resultados de la encuesta**
-https://docs.google.com/spreadsheets/d/15LwXZlGyGThu5hBZqCm-4o6AzfmyfRzYdAk4eL1WDPI/edit?usp=forms_web_b#gid=516445345
+https://goo.gl/TKayFW
 
 **Resultados de la encuesta**
 
