@@ -6,11 +6,6 @@ Es una red social para personas que gustan de "rolear" es decir, tomar la person
 
 ## Desarrollado para [laboratoria](https://laboratoria.la)
 
-
-### VISTA DE LA PÁGINA: GH-PAGES
-
-https://stephaniewv.github.io/Red_Social/
-
 ## PRODUCTO FINAL : RED SOCIAL PARA ROLPLAYERS
 
 
