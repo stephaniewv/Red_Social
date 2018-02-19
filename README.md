@@ -6,7 +6,6 @@ Es una red social para personas que gustan de "rolear" es decir, tomar la person
 
 ## Desarrollado para [laboratoria](https://laboratoria.la)
 
-![logo](assets/images/logo_laboratoria.png)
 
 ### VISTA DE LA PÁGINA: GH-PAGES
 
